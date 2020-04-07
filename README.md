@@ -14,5 +14,3 @@ You can find plots related to:
 - NATION / ITALY
 - GEO / NORTH-CENTER-SOUTH
 - REGION / All Italian Regions
-
-## Plot Types
