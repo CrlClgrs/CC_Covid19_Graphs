@@ -1,7 +1,7 @@
 # CC_Covid19_Graphs
 To navigate through the plots, go to:
 
-(https://crlclgrs.github.io/CC_Covid19_Graphs/)[https://crlclgrs.github.io/CC_Covid19_Graphs/]
+https://crlclgrs.github.io/CC_Covid19_Graphs/
 
 ## Updated to 04-Apr-2020
 
