@@ -7,7 +7,7 @@
 <style>
 
 body, html {
-  height: 500%;
+  height: 100%;
   font-family: "Inconsolata", sans-serif;
   overflow-wrap: anywhere;
 }
@@ -18,8 +18,8 @@ h4 {
   display: none;
 }
 .accordion {
-  background-color: #ccc123;
-  color: #222aaa;
+  background-color: #44bc89;
+  color: #111aaa;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -68,7 +68,7 @@ h4 {
 </style>
 
 
-<body>
+<body onload="scrollWin()">
 
   <button class="accordion">NATION</button>
   <div class="panel">
@@ -81,6 +81,7 @@ h4 {
       <div class="w3-quarter"><a href="NEW_VALUES_ON_SELF_TOTALS/NATION/ITALY.html">NEW_VALUES_ON_SELF_TOTALS</a></div>
       <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/NATION/ITALY.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
       <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/NATION/ITALY.html">RELATIVE_CHARTS_1</a></div>
+      <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/NATION/ITALY.html">RELATIVE_CHARTS_2</a></div>
       </table>
   </div>
 
@@ -95,6 +96,7 @@ h4 {
     <div class="w3-quarter"><a href="NEW_VALUES_ON_SELF_TOTALS/GEO/NORTH.html">NEW_VALUES_ON_SELF_TOTALS</a></div>
     <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/GEO/NORTH.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
     <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/GEO/NORTH.html">RELATIVE_CHARTS_1</a></div>
+    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/GEO/NORTH.html">RELATIVE_CHARTS_2</a></div>
     </table>
     <div class="w3-container w3-green"><h4>Center</h4></div>
     <table style="width:100%; border: 1px solid black; background-color: #a1f1c1;">
@@ -105,6 +107,7 @@ h4 {
     <div class="w3-quarter"><a href="NEW_VALUES_ON_SELF_TOTALS/GEO/CENTER.html">NEW_VALUES_ON_SELF_TOTALS</a></div>
     <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/GEO/CENTER.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
     <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/GEO/CENTER.html">RELATIVE_CHARTS_1</a></div>
+    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/GEO/CENTER.html">RELATIVE_CHARTS_2</a></div>
     </table>
     <div class="w3-container w3-green"><h4>South</h4></div>
     <table style="width:100%; border: 1px solid black; background-color: #a1f1c1;">
@@ -115,6 +118,7 @@ h4 {
     <div class="w3-quarter"><a href="NEW_VALUES_ON_SELF_TOTALS/GEO/SOUTH.html">NEW_VALUES_ON_SELF_TOTALS</a></div>
     <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/GEO/SOUTH.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
     <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/GEO/SOUTH.html">RELATIVE_CHARTS_1</a></div>
+    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/GEO/SOUTH.html">RELATIVE_CHARTS_2</a></div>
     </table>
   </div>
 
@@ -130,6 +134,7 @@ h4 {
     <div class="w3-quarter"><a href="NEW_VALUES_ON_SELF_TOTALS/REGION/Abruzzo.html">NEW_VALUES_ON_SELF_TOTALS</a></div>
     <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/Abruzzo.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
     <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/Abruzzo.html">RELATIVE_CHARTS_1</a></div>
+    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/REGION/Abruzzo.html">RELATIVE_CHARTS_2</a></div>
     </table>
     <div class="w3-container w3-green"><h4>Basilicata</h4></div>
     <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
@@ -140,6 +145,7 @@ h4 {
     <div class="w3-quarter"><a href="NEW_VALUES_ON_SELF_TOTALS/REGION/Basilicata.html">NEW_VALUES_ON_SELF_TOTALS</a></div>
     <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/Basilicata.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
     <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/Basilicata.html">RELATIVE_CHARTS_1</a></div>
+    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/REGION/Basilicata.html">RELATIVE_CHARTS_2</a></div>
     </table>
     <div class="w3-container w3-green"><h4>Calabria</h4></div>
     <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
@@ -150,6 +156,7 @@ h4 {
     <div class="w3-quarter"><a href="NEW_VALUES_ON_SELF_TOTALS/REGION/Calabria.html">NEW_VALUES_ON_SELF_TOTALS</a></div>
     <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/Calabria.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
     <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/Calabria.html">RELATIVE_CHARTS_1</a></div>
+    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/REGION/Calabria.html">RELATIVE_CHARTS_2</a></div>
     </table>
     <div class="w3-container w3-green"><h4>Campania</h4></div>
     <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
@@ -160,6 +167,7 @@ h4 {
     <div class="w3-quarter"><a href="NEW_VALUES_ON_SELF_TOTALS/REGION/Campania.html">NEW_VALUES_ON_SELF_TOTALS</a></div>
     <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/Campania.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
     <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/Campania.html">RELATIVE_CHARTS_1</a></div>
+    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/REGION/Campania.html">RELATIVE_CHARTS_2</a></div>
     </table>
     <div class="w3-container w3-green"><h4>Emilia-Romagna</h4></div>
     <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
@@ -170,6 +178,7 @@ h4 {
     <div class="w3-quarter"><a href="NEW_VALUES_ON_SELF_TOTALS/REGION/Emilia-Romagna.html">NEW_VALUES_ON_SELF_TOTALS</a></div>
     <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/Emilia-Romagna.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
     <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/Emilia-Romagna.html">RELATIVE_CHARTS_1</a></div>
+    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/REGION/Emilia-Romagna.html">RELATIVE_CHARTS_2</a></div>
     </table>
     <div class="w3-container w3-green"><h4>Friuli Venezia Giulia</h4></div>
     <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
@@ -180,6 +189,7 @@ h4 {
     <div class="w3-quarter"><a href="NEW_VALUES_ON_SELF_TOTALS/REGION/Friuli Venezia Giulia.html">NEW_VALUES_ON_SELF_TOTALS</a></div>
     <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/Friuli Venezia Giulia.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
     <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/Friuli Venezia Giulia.html">RELATIVE_CHARTS_1</a></div>
+    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/REGION/Friuli Venezia Giulia.html">RELATIVE_CHARTS_2</a></div>
     </table>
     <div class="w3-container w3-green"><h4>Lazio</h4></div>
     <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
@@ -190,6 +200,7 @@ h4 {
     <div class="w3-quarter"><a href="NEW_VALUES_ON_SELF_TOTALS/REGION/Lazio.html">NEW_VALUES_ON_SELF_TOTALS</a></div>
     <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/Lazio.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
     <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/Lazio.html">RELATIVE_CHARTS_1</a></div>
+    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/REGION/Lazio.html">RELATIVE_CHARTS_2</a></div>
     </table>
     <div class="w3-container w3-green"><h4>Liguria</h4></div>
     <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
@@ -200,6 +211,7 @@ h4 {
     <div class="w3-quarter"><a href="NEW_VALUES_ON_SELF_TOTALS/REGION/Liguria.html">NEW_VALUES_ON_SELF_TOTALS</a></div>
     <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/Liguria.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
     <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/Liguria.html">RELATIVE_CHARTS_1</a></div>
+    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/REGION/Liguria.html">RELATIVE_CHARTS_2</a></div>
     </table>
     <div class="w3-container w3-green"><h4>Lombardia</h4></div>
     <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
@@ -210,6 +222,7 @@ h4 {
     <div class="w3-quarter"><a href="NEW_VALUES_ON_SELF_TOTALS/REGION/Lombardia.html">NEW_VALUES_ON_SELF_TOTALS</a></div>
     <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/Lombardia.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
     <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/Lombardia.html">RELATIVE_CHARTS_1</a></div>
+    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/REGION/Lombardia.html">RELATIVE_CHARTS_2</a></div>
     </table>
     <div class="w3-container w3-green"><h4>Marche</h4></div>
     <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
@@ -220,6 +233,7 @@ h4 {
     <div class="w3-quarter"><a href="NEW_VALUES_ON_SELF_TOTALS/REGION/Marche.html">NEW_VALUES_ON_SELF_TOTALS</a></div>
     <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/Marche.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
     <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/Marche.html">RELATIVE_CHARTS_1</a></div>
+    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/REGION/Marche.html">RELATIVE_CHARTS_2</a></div>
     </table>
     <div class="w3-container w3-green"><h4>Molise</h4></div>
     <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
@@ -230,6 +244,7 @@ h4 {
     <div class="w3-quarter"><a href="NEW_VALUES_ON_SELF_TOTALS/REGION/Molise.html">NEW_VALUES_ON_SELF_TOTALS</a></div>
     <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/Molise.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
     <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/Molise.html">RELATIVE_CHARTS_1</a></div>
+    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/REGION/Molise.html">RELATIVE_CHARTS_2</a></div>
     </table>
     <div class="w3-container w3-green"><h4>P.A. Bolzano</h4></div>
     <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
@@ -240,6 +255,7 @@ h4 {
     <div class="w3-quarter"><a href="NEW_VALUES_ON_SELF_TOTALS/REGION/P.A. Bolzano.html">NEW_VALUES_ON_SELF_TOTALS</a></div>
     <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/P.A. Bolzano.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
     <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/P.A. Bolzano.html">RELATIVE_CHARTS_1</a></div>
+    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/REGION/P.A. Bolzano.html">RELATIVE_CHARTS_2</a></div>
     </table>
     <div class="w3-container w3-green"><h4>P.A. Trento</h4></div>
     <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
@@ -250,6 +266,7 @@ h4 {
     <div class="w3-quarter"><a href="NEW_VALUES_ON_SELF_TOTALS/REGION/P.A. Trento.html">NEW_VALUES_ON_SELF_TOTALS</a></div>
     <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/P.A. Trento.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
     <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/P.A. Trento.html">RELATIVE_CHARTS_1</a></div>
+    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/REGION/P.A. Trento.html">RELATIVE_CHARTS_2</a></div>
     </table>
     <div class="w3-container w3-green"><h4>Piemonte</h4></div>
     <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
@@ -260,6 +277,7 @@ h4 {
     <div class="w3-quarter"><a href="NEW_VALUES_ON_SELF_TOTALS/REGION/Piemonte.html">NEW_VALUES_ON_SELF_TOTALS</a></div>
     <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/Piemonte.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
     <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/Piemonte.html">RELATIVE_CHARTS_1</a></div>
+    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/REGION/Piemonte.html">RELATIVE_CHARTS_2</a></div>
     </table>
     <div class="w3-container w3-green"><h4>Puglia</h4></div>
     <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
@@ -270,6 +288,7 @@ h4 {
     <div class="w3-quarter"><a href="NEW_VALUES_ON_SELF_TOTALS/REGION/Puglia.html">NEW_VALUES_ON_SELF_TOTALS</a></div>
     <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/Puglia.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
     <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/Puglia.html">RELATIVE_CHARTS_1</a></div>
+    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/REGION/Puglia.html">RELATIVE_CHARTS_2</a></div>
     </table>
     <div class="w3-container w3-green"><h4>Sardegna</h4></div>
     <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
@@ -280,6 +299,7 @@ h4 {
     <div class="w3-quarter"><a href="NEW_VALUES_ON_SELF_TOTALS/REGION/Sardegna.html">NEW_VALUES_ON_SELF_TOTALS</a></div>
     <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/Sardegna.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
     <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/Sardegna.html">RELATIVE_CHARTS_1</a></div>
+    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/REGION/Sardegna.html">RELATIVE_CHARTS_2</a></div>
     </table>
     <div class="w3-container w3-green"><h4>Sicilia</h4></div>
     <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
@@ -290,6 +310,7 @@ h4 {
     <div class="w3-quarter"><a href="NEW_VALUES_ON_SELF_TOTALS/REGION/Sicilia.html">NEW_VALUES_ON_SELF_TOTALS</a></div>
     <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/Sicilia.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
     <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/Sicilia.html">RELATIVE_CHARTS_1</a></div>
+    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/REGION/Sicilia.html">RELATIVE_CHARTS_2</a></div>
     </table>
     <div class="w3-container w3-green"><h4>Toscana</h4></div>
     <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
@@ -300,6 +321,7 @@ h4 {
     <div class="w3-quarter"><a href="NEW_VALUES_ON_SELF_TOTALS/REGION/Toscana.html">NEW_VALUES_ON_SELF_TOTALS</a></div>
     <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/Toscana.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
     <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/Toscana.html">RELATIVE_CHARTS_1</a></div>
+    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/REGION/Toscana.html">RELATIVE_CHARTS_2</a></div>
     </table>
     <div class="w3-container w3-green"><h4>Umbria</h4></div>
     <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
@@ -310,6 +332,7 @@ h4 {
     <div class="w3-quarter"><a href="NEW_VALUES_ON_SELF_TOTALS/REGION/Umbria.html">NEW_VALUES_ON_SELF_TOTALS</a></div>
     <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/Umbria.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
     <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/Umbria.html">RELATIVE_CHARTS_1</a></div>
+    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/REGION/Umbria.html">RELATIVE_CHARTS_2</a></div>
     </table>
     <div class="w3-container w3-green"><h4>Valle d'Aosta</h4></div>
     <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
@@ -320,6 +343,7 @@ h4 {
     <div class="w3-quarter"><a href="NEW_VALUES_ON_SELF_TOTALS/REGION/Valle d'Aosta.html">NEW_VALUES_ON_SELF_TOTALS</a></div>
     <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/Valle d'Aosta.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
     <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/Valle d'Aosta.html">RELATIVE_CHARTS_1</a></div>
+    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/REGION/Valle d'Aosta.html">RELATIVE_CHARTS_2</a></div>
     </table>
     <div class="w3-container w3-green"><h4>Veneto</h4></div>
     <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
@@ -330,6 +354,7 @@ h4 {
     <div class="w3-quarter"><a href="NEW_VALUES_ON_SELF_TOTALS/REGION/Veneto.html">NEW_VALUES_ON_SELF_TOTALS</a></div>
     <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/Veneto.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
     <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/Veneto.html">RELATIVE_CHARTS_1</a></div>
+    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/REGION/Veneto.html">RELATIVE_CHARTS_2</a></div>
     </table>
   </div>
 </body>
@@ -349,6 +374,8 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+
 </script>
 
 
