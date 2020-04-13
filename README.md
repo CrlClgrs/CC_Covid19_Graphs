@@ -3,7 +3,7 @@ To navigate through the plots, go to:
 
 https://crlclgrs.github.io/CC_Covid19_Graphs/
 
-## Updated to 12-Apr-2020
+## Updated to 13-Apr-2020
 
 This is a simple project that takes data from
 (Dati COVID-19 Italia)[https://github.com/pcm-dpc/COVID-19].
