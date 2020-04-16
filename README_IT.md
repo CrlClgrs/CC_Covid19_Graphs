@@ -5,8 +5,9 @@ Per navigare attraverso i grafici seguire il seguente link:
 
 [EN]
 https://crlclgrs.github.io/CC_Covid19_Graphs/
+
 [IT]
-https://crlclgrs.github.io/CC_Covid19_Graphs/it
+https://crlclgrs.github.io/CC_Covid19_Graphs/it/index.html
 
 
 Se avete domande, contattatemi su Twitter:

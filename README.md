@@ -5,8 +5,10 @@ To navigate through the plots, go to:
 
 [EN]
 https://crlclgrs.github.io/CC_Covid19_Graphs/
+
 [IT]
-https://crlclgrs.github.io/CC_Covid19_Graphs/IT
+https://crlclgrs.github.io/CC_Covid19_Graphs/it/index.html
+
 
 If you have any question, feel free to ask on Twitter:
 [@ClgClgrs](https://twitter.com/intent/tweet?screen_name=CrlClgrs&ref_src=twsrc%5Etfw)
