@@ -1,27 +1,28 @@
 # CC_Covid19_Graphs
-(Italian version [here](README_IT.md))
+(English version [here](README.md))
 
-To navigate through the plots, go to:
+Per navigare attraverso i grafici seguire il seguente link:
 
 [EN]
 https://crlclgrs.github.io/CC_Covid19_Graphs/
 [IT]
-https://crlclgrs.github.io/CC_Covid19_Graphs/IT
+https://crlclgrs.github.io/CC_Covid19_Graphs/it
 
-If you have any question, feel free to ask on Twitter:
+
+Se avete domande, contattatemi su Twitter:
 [@ClgClgrs](https://twitter.com/intent/tweet?screen_name=CrlClgrs&ref_src=twsrc%5Etfw)
 
-## Updated to 15-Apr-2020
+## Updated to 16-Apr-2020
 
-This is a simple project that takes data from
+Questo è un semplice progetto che prende i dati da:
 [Dati COVID-19 Italia](https://github.com/pcm-dpc/COVID-19).
 
-The plots are made with great [plot.ly](https://plotly.com/) library.
+I grafici sono realizzati con la splendida libreria [plot.ly](https://plotly.com/).
 
-You can find plots related to:
-- NATION / ITALY
-- GEO / NORTH-CENTER-SOUTH
-- REGION / All Italian Regions
+Si possono trovare grafici relativi a:
+- NAZIONE / ITALIA
+- ZONA GEOGRAFICA / NORD / CENTRO / SUD
+- REGIONE / Tutte le regioni italiane
 
 
 ## Plots Explanation
