@@ -9,7 +9,6 @@ https://crlclgrs.github.io/CC_Covid19_Graphs/
 [IT]
 https://crlclgrs.github.io/CC_Covid19_Graphs/it/index.html
 
-
 If you have any question, feel free to ask on Twitter:
 [@ClgClgrs](https://twitter.com/intent/tweet?screen_name=CrlClgrs&ref_src=twsrc%5Etfw)
 
@@ -41,14 +40,14 @@ The number of people healed until now
 The number of people deceased until now
 #### INTENSIVE CARE
 The current number of people in intensive care
-#### CASES EST WITH [DAY DELTA(CASES) <GAUSS FIT>]
-The today value of CASES is recalculated using the value of yesterday for CASES + the difference estimation found with DAY DELTA(CASES) <GAUSS FIT>
-#### POSITIVES <GAUSS FIT>
+#### CASES EST WITH [DAY DELTA(CASES)<GAUSS FIT>]
+The today value of CASES is recalculated using the value of yesterday for CASES + the difference estimation found with DAY DELTA(CASES)<GAUSS FIT>
+#### POSITIVES<GAUSS FIT>
 A gaussian fitting of POSITIVES
-#### HEALED EST WITH [DAY DELTA(HEALED) <GAUSS FIT>]
-The today value of HEALED is recalculated using the value of yesterday for HEALED + the difference estimation found with DAY DELTA(HEALED) <GAUSS FIT>
-#### DECEASED EST WITH [DAY DELTA(DECEASED) <GAUSS FIT>]
-The today value of DECEASED is recalculated using the value of yesterday for DECEASED + the difference estimation found with DAY DELTA(DECEASED) <GAUSS FIT>
+#### HEALED EST WITH [DAY DELTA(HEALED)<GAUSS FIT>]
+The today value of HEALED is recalculated using the value of yesterday for HEALED + the difference estimation found with DAY DELTA(HEALED)<GAUSS FIT>
+#### DECEASED EST WITH [DAY DELTA(DECEASED)<GAUSS FIT>]
+The today value of DECEASED is recalculated using the value of yesterday for DECEASED + the difference estimation found with DAY DELTA(DECEASED)<GAUSS FIT>
 ### RELATIVE_CHARTS_1
 #### DECEASED / POSITIVES
 Value of DECEASED / Value of POSITIVES --- both at the value of the current day
@@ -61,7 +60,7 @@ Value of DAY DELTA(POSITIVES) / Value of POSITIVES --- both at the value of the 
 ### RELATIVE_CHARTS_2
 #### POSITIVES / TESTS
 Value of POSITIVES / Value of TESTS --- both at the value of the current day
-#### POSITIVES / TESTS <GAUSS FIT>
+#### POSITIVES / TESTS<GAUSS FIT>
 A gaussian fitting of POSITIVES / TESTS
 #### POSITIVES OF DAY / DAY DELTA(TESTS)
 Value of POSITIVES OF DAY / Value of DAY DELTA(TESTS) --- both at the value of the current day
@@ -80,11 +79,11 @@ Value of HOSPITALIZED of today - Value of HOSPITALIZED of yesterday
 Value of INTENSIVE CARE of today - Value of INTENSIVE CARE of yesterday
 #### DAY DELTA(HEALED)
 Value of HEALED of today - Value of HEALED of yesterday
-#### DAY DELTA(HEALED) <GAUSS FIT>
+#### DAY DELTA(HEALED)<GAUSS FIT>
 A gaussian fitting of DAY DELTA(HEALED)
 #### DAY DELTA(DECEASED)
 Value of DECEASED of today - Value of DECEASED of yesterday
-#### DAY DELTA(DECEASED) <GAUSS FIT>
+#### DAY DELTA(DECEASED)<GAUSS FIT>
 A gaussian fitting of DAY DELTA(DECEASED)
 ### NEW_VALUES_ON_TOT_POSITIVI
 #### DAY DELTA(POSITIVES) / POSITIVES
@@ -127,31 +126,15 @@ A polynomial fitting of DAY DELTA(HEALED) / POSITIVES estimated with order 1
 A polynomial fitting of DAY DELTA(INTENSIVE CARE) / POSITIVES estimated with order 1
 #### DAY DELTA(DECEASED) / POSITIVES - POLY FIT ORD 1
 A polynomial fitting of DAY DELTA(DECEASED) / POSITIVES estimated with order 1
-### NEW_VALUES_ON_SELF_TOTALS
-#### DAY DELTA(POSITIVES) / POSITIVES
-Value of DAY DELTA(POSITIVES) / Value of POSITIVES --- both at the value of the current day
-#### DAY DELTA(HEALED) / HEALED
-Value of DAY DELTA(HEALED) / Value of HEALED --- both at the value of the current day
-#### DAY DELTA(DECEASED) / DECEASED
-Value of DAY DELTA(DECEASED) / Value of DECEASED --- both at the value of the current day
-#### DAY DELTA(POSITIVES) / POSITIVES - POLY FIT ORD 3
-A polynomial fitting of DAY DELTA(POSITIVES) / POSITIVES estimated with order 3
-#### DAY DELTA(HEALED) / HEALED - POLY FIT ORD 3
-A polynomial fitting of DAY DELTA(HEALED) / HEALED estimated with order 3
-#### DAY DELTA(DECEASED) / DECEASED - POLY FIT ORD 3
-A polynomial fitting of DAY DELTA(DECEASED) / DECEASED estimated with order 3
-#### DAY DELTA(POSITIVES) / POSITIVES - POLY FIT ORD 2
-A polynomial fitting of DAY DELTA(POSITIVES) / POSITIVES estimated with order 2
-#### DAY DELTA(HEALED) / HEALED - POLY FIT ORD 2
-A polynomial fitting of DAY DELTA(HEALED) / HEALED estimated with order 2
-#### DAY DELTA(DECEASED) / DECEASED - POLY FIT ORD 2
-A polynomial fitting of DAY DELTA(DECEASED) / DECEASED estimated with order 2
-#### DAY DELTA(POSITIVES) / POSITIVES - POLY FIT ORD 1
-A polynomial fitting of DAY DELTA(POSITIVES) / POSITIVES estimated with order 1
-#### DAY DELTA(HEALED) / HEALED - POLY FIT ORD 1
-A polynomial fitting of DAY DELTA(HEALED) / HEALED estimated with order 1
-#### DAY DELTA(DECEASED) / DECEASED - POLY FIT ORD 1
-A polynomial fitting of DAY DELTA(DECEASED) / DECEASED estimated with order 1
+### NEW_VALUES_STACKS
+#### DAY DELTA(POSITIVES)
+Value of POSITIVES of today - Value of POSITIVES of yesterday
+#### POSITIVES OF DAY
+The number of people found positive in this day
+#### -DAY DELTA(DECEASED)
+Negation of DAY DELTA(DECEASED)
+#### -DAY DELTA(HEALED)
+Negation of DAY DELTA(HEALED)
 ### NEW_VALUES_DIFF_TO_YESTERDAY
 #### DAY DELTA(DAY DELTA(POSITIVES))
 Value of DAY DELTA(POSITIVES) of today - Value of DAY DELTA(POSITIVES) of yesterday

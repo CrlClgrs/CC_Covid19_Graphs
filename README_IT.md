@@ -26,159 +26,143 @@ Si possono trovare grafici relativi a:
 - REGIONE / Tutte le regioni italiane
 
 
-## Plots Explanation
+## Spiegazione dei Grafici
 
 ### ABSOLUTE_STACKS
-#### CASES
-The total number of cases until now (positives + deceased + healed)
-#### POSITIVES
-The current number of positive people
-#### HOSPITALIZED
-The current number of people in hospital
-#### HEALED
-The number of people healed until now
-#### DECEASED
-The number of people deceased until now
-#### INTENSIVE CARE
-The current number of people in intensive care
-#### CASES EST WITH [DAY DELTA(CASES) <GAUSS FIT>]
-The today value of CASES is recalculated using the value of yesterday for CASES + the difference estimation found with DAY DELTA(CASES) <GAUSS FIT>
-#### POSITIVES <GAUSS FIT>
-A gaussian fitting of POSITIVES
-#### HEALED EST WITH [DAY DELTA(HEALED) <GAUSS FIT>]
-The today value of HEALED is recalculated using the value of yesterday for HEALED + the difference estimation found with DAY DELTA(HEALED) <GAUSS FIT>
-#### DECEASED EST WITH [DAY DELTA(DECEASED) <GAUSS FIT>]
-The today value of DECEASED is recalculated using the value of yesterday for DECEASED + the difference estimation found with DAY DELTA(DECEASED) <GAUSS FIT>
+#### TOTALE CASI
+Il numero di casi fino ad oggi (positivi + deceduti + guariti)
+#### POSITIVI
+Il numero di persone attualmente positive
+#### OSPEDALIZZATI
+Il numero di persone attualmente in ospedale
+#### GUARITI
+Il numero di persone guarite fino ad oggi
+#### DECEDUTI
+Il numero di persone decedute fino ad oggi
+#### TERAPIA INTENSIVA
+Il numero di persone attualmente in terapia intensiva
+#### TOTALE CASI STIM CON [DELTA GIORNO(TOTALE CASI)<FIT GAUSS>]
+Il valore di oggi di TOTALE CASI è ricalcolto usando il valore di ieri di TOTALE CASI + la stima della differenza trovata da DELTA GIORNO(TOTALE CASI)<FIT GAUSS>
+#### POSITIVI<FIT GAUSS>
+Un fitting gaussiano di POSITIVI
+#### GUARITI STIM CON [DELTA GIORNO(GUARITI)<FIT GAUSS>]
+Il valore di oggi di GUARITI è ricalcolto usando il valore di ieri di GUARITI + la stima della differenza trovata da DELTA GIORNO(GUARITI)<FIT GAUSS>
+#### DECEDUTI STIM CON [DELTA GIORNO(DECEDUTI)<FIT GAUSS>]
+Il valore di oggi di DECEDUTI è ricalcolto usando il valore di ieri di DECEDUTI + la stima della differenza trovata da DELTA GIORNO(DECEDUTI)<FIT GAUSS>
 ### RELATIVE_CHARTS_1
-#### DECEASED / POSITIVES
-Value of DECEASED / Value of POSITIVES --- both at the value of the current day
-#### HEALED / POSITIVES
-Value of HEALED / Value of POSITIVES --- both at the value of the current day
-#### POSITIVES OF DAY / POSITIVES
-Value of POSITIVES OF DAY / Value of POSITIVES --- both at the value of the current day
-#### DAY DELTA(POSITIVES) / POSITIVES
-Value of DAY DELTA(POSITIVES) / Value of POSITIVES --- both at the value of the current day
+#### DECEDUTI / POSITIVI
+Valore di DECEDUTI / Valore di POSITIVI --- entrambi al valore del giorno corrente
+#### GUARITI / POSITIVI
+Valore di GUARITI / Valore di POSITIVI --- entrambi al valore del giorno corrente
+#### POSITIVI DI OGGI / POSITIVI
+Valore di POSITIVI DI OGGI / Valore di POSITIVI --- entrambi al valore del giorno corrente
+#### DELTA GIORNO(POSITIVI) / POSITIVI
+Valore di DELTA GIORNO(POSITIVI) / Valore di POSITIVI --- entrambi al valore del giorno corrente
 ### RELATIVE_CHARTS_2
-#### POSITIVES / TESTS
-Value of POSITIVES / Value of TESTS --- both at the value of the current day
-#### POSITIVES / TESTS <GAUSS FIT>
-A gaussian fitting of POSITIVES / TESTS
-#### POSITIVES OF DAY / DAY DELTA(TESTS)
-Value of POSITIVES OF DAY / Value of DAY DELTA(TESTS) --- both at the value of the current day
-#### DAY DELTA(POSITIVES) / DAY DELTA(TESTS)
-Value of DAY DELTA(POSITIVES) / Value of DAY DELTA(TESTS) --- both at the value of the current day
+#### POSITIVI / TAMPONI
+Valore di POSITIVI / Valore di TAMPONI --- entrambi al valore del giorno corrente
+#### POSITIVI / TAMPONI<FIT GAUSS>
+Un fitting gaussiano di POSITIVI / TAMPONI
+#### POSITIVI DI OGGI / DELTA GIORNO(TAMPONI)
+Valore di POSITIVI DI OGGI / Valore di DELTA GIORNO(TAMPONI) --- entrambi al valore del giorno corrente
+#### DELTA GIORNO(POSITIVI) / DELTA GIORNO(TAMPONI)
+Valore di DELTA GIORNO(POSITIVI) / Valore di DELTA GIORNO(TAMPONI) --- entrambi al valore del giorno corrente
 ### NEW_VALUES_IN_DAY
-#### POSITIVES OF DAY
-The number of people found positive in this day
-#### DAY DELTA(HEALED)
-Value of HEALED of today - Value of HEALED of yesterday
-#### DAY DELTA(DECEASED)
-Value of DECEASED of today - Value of DECEASED of yesterday
-#### DAY DELTA(HOSPITALIZED)
-Value of HOSPITALIZED of today - Value of HOSPITALIZED of yesterday
-#### DAY DELTA(INTENSIVE CARE)
-Value of INTENSIVE CARE of today - Value of INTENSIVE CARE of yesterday
-#### DAY DELTA(HEALED)
-Value of HEALED of today - Value of HEALED of yesterday
-#### DAY DELTA(HEALED) <GAUSS FIT>
-A gaussian fitting of DAY DELTA(HEALED)
-#### DAY DELTA(DECEASED)
-Value of DECEASED of today - Value of DECEASED of yesterday
-#### DAY DELTA(DECEASED) <GAUSS FIT>
-A gaussian fitting of DAY DELTA(DECEASED)
+#### POSITIVI DI OGGI
+Il numero di persone trovate positive nel giorno
+#### DELTA GIORNO(GUARITI)
+Valore di GUARITI oggi - Valore di GUARITI ieri
+#### DELTA GIORNO(DECEDUTI)
+Valore di DECEDUTI oggi - Valore di DECEDUTI ieri
+#### DELTA GIORNO(OSPEDALIZZATI)
+Valore di OSPEDALIZZATI oggi - Valore di OSPEDALIZZATI ieri
+#### DELTA GIORNO(TERAPIA INTENSIVA)
+Valore di TERAPIA INTENSIVA oggi - Valore di TERAPIA INTENSIVA ieri
+#### DELTA GIORNO(GUARITI)
+Valore di GUARITI oggi - Valore di GUARITI ieri
+#### DELTA GIORNO(GUARITI)<FIT GAUSS>
+Un fitting gaussiano di DELTA GIORNO(GUARITI)
+#### DELTA GIORNO(DECEDUTI)
+Valore di DECEDUTI oggi - Valore di DECEDUTI ieri
+#### DELTA GIORNO(DECEDUTI)<FIT GAUSS>
+Un fitting gaussiano di DELTA GIORNO(DECEDUTI)
 ### NEW_VALUES_ON_TOT_POSITIVI
-#### DAY DELTA(POSITIVES) / POSITIVES
-Value of DAY DELTA(POSITIVES) / Value of POSITIVES --- both at the value of the current day
-#### DAY DELTA(HOSPITALIZED) / POSITIVES
-Value of DAY DELTA(HOSPITALIZED) / Value of POSITIVES --- both at the value of the current day
-#### DAY DELTA(HEALED) / POSITIVES
-Value of DAY DELTA(HEALED) / Value of POSITIVES --- both at the value of the current day
-#### DAY DELTA(INTENSIVE CARE) / POSITIVES
-Value of DAY DELTA(INTENSIVE CARE) / Value of POSITIVES --- both at the value of the current day
-#### DAY DELTA(DECEASED) / POSITIVES
-Value of DAY DELTA(DECEASED) / Value of POSITIVES --- both at the value of the current day
-#### DAY DELTA(POSITIVES) / POSITIVES - POLY FIT ORD 3
-A polynomial fitting of DAY DELTA(POSITIVES) / POSITIVES estimated with order 3
-#### DAY DELTA(HOSPITALIZED) / POSITIVES - POLY FIT ORD 3
-A polynomial fitting of DAY DELTA(HOSPITALIZED) / POSITIVES estimated with order 3
-#### DAY DELTA(HEALED) / POSITIVES - POLY FIT ORD 3
-A polynomial fitting of DAY DELTA(HEALED) / POSITIVES estimated with order 3
-#### DAY DELTA(INTENSIVE CARE) / POSITIVES - POLY FIT ORD 3
-A polynomial fitting of DAY DELTA(INTENSIVE CARE) / POSITIVES estimated with order 3
-#### DAY DELTA(DECEASED) / POSITIVES - POLY FIT ORD 3
-A polynomial fitting of DAY DELTA(DECEASED) / POSITIVES estimated with order 3
-#### DAY DELTA(POSITIVES) / POSITIVES - POLY FIT ORD 2
-A polynomial fitting of DAY DELTA(POSITIVES) / POSITIVES estimated with order 2
-#### DAY DELTA(HOSPITALIZED) / POSITIVES - POLY FIT ORD 2
-A polynomial fitting of DAY DELTA(HOSPITALIZED) / POSITIVES estimated with order 2
-#### DAY DELTA(HEALED) / POSITIVES - POLY FIT ORD 2
-A polynomial fitting of DAY DELTA(HEALED) / POSITIVES estimated with order 2
-#### DAY DELTA(INTENSIVE CARE) / POSITIVES - POLY FIT ORD 2
-A polynomial fitting of DAY DELTA(INTENSIVE CARE) / POSITIVES estimated with order 2
-#### DAY DELTA(DECEASED) / POSITIVES - POLY FIT ORD 2
-A polynomial fitting of DAY DELTA(DECEASED) / POSITIVES estimated with order 2
-#### DAY DELTA(POSITIVES) / POSITIVES - POLY FIT ORD 1
-A polynomial fitting of DAY DELTA(POSITIVES) / POSITIVES estimated with order 1
-#### DAY DELTA(HOSPITALIZED) / POSITIVES - POLY FIT ORD 1
-A polynomial fitting of DAY DELTA(HOSPITALIZED) / POSITIVES estimated with order 1
-#### DAY DELTA(HEALED) / POSITIVES - POLY FIT ORD 1
-A polynomial fitting of DAY DELTA(HEALED) / POSITIVES estimated with order 1
-#### DAY DELTA(INTENSIVE CARE) / POSITIVES - POLY FIT ORD 1
-A polynomial fitting of DAY DELTA(INTENSIVE CARE) / POSITIVES estimated with order 1
-#### DAY DELTA(DECEASED) / POSITIVES - POLY FIT ORD 1
-A polynomial fitting of DAY DELTA(DECEASED) / POSITIVES estimated with order 1
-### NEW_VALUES_ON_SELF_TOTALS
-#### DAY DELTA(POSITIVES) / POSITIVES
-Value of DAY DELTA(POSITIVES) / Value of POSITIVES --- both at the value of the current day
-#### DAY DELTA(HEALED) / HEALED
-Value of DAY DELTA(HEALED) / Value of HEALED --- both at the value of the current day
-#### DAY DELTA(DECEASED) / DECEASED
-Value of DAY DELTA(DECEASED) / Value of DECEASED --- both at the value of the current day
-#### DAY DELTA(POSITIVES) / POSITIVES - POLY FIT ORD 3
-A polynomial fitting of DAY DELTA(POSITIVES) / POSITIVES estimated with order 3
-#### DAY DELTA(HEALED) / HEALED - POLY FIT ORD 3
-A polynomial fitting of DAY DELTA(HEALED) / HEALED estimated with order 3
-#### DAY DELTA(DECEASED) / DECEASED - POLY FIT ORD 3
-A polynomial fitting of DAY DELTA(DECEASED) / DECEASED estimated with order 3
-#### DAY DELTA(POSITIVES) / POSITIVES - POLY FIT ORD 2
-A polynomial fitting of DAY DELTA(POSITIVES) / POSITIVES estimated with order 2
-#### DAY DELTA(HEALED) / HEALED - POLY FIT ORD 2
-A polynomial fitting of DAY DELTA(HEALED) / HEALED estimated with order 2
-#### DAY DELTA(DECEASED) / DECEASED - POLY FIT ORD 2
-A polynomial fitting of DAY DELTA(DECEASED) / DECEASED estimated with order 2
-#### DAY DELTA(POSITIVES) / POSITIVES - POLY FIT ORD 1
-A polynomial fitting of DAY DELTA(POSITIVES) / POSITIVES estimated with order 1
-#### DAY DELTA(HEALED) / HEALED - POLY FIT ORD 1
-A polynomial fitting of DAY DELTA(HEALED) / HEALED estimated with order 1
-#### DAY DELTA(DECEASED) / DECEASED - POLY FIT ORD 1
-A polynomial fitting of DAY DELTA(DECEASED) / DECEASED estimated with order 1
+#### DELTA GIORNO(POSITIVI) / POSITIVI
+Valore di DELTA GIORNO(POSITIVI) / Valore di POSITIVI --- entrambi al valore del giorno corrente
+#### DELTA GIORNO(OSPEDALIZZATI) / POSITIVI
+Valore di DELTA GIORNO(OSPEDALIZZATI) / Valore di POSITIVI --- entrambi al valore del giorno corrente
+#### DELTA GIORNO(GUARITI) / POSITIVI
+Valore di DELTA GIORNO(GUARITI) / Valore di POSITIVI --- entrambi al valore del giorno corrente
+#### DELTA GIORNO(TERAPIA INTENSIVA) / POSITIVI
+Valore di DELTA GIORNO(TERAPIA INTENSIVA) / Valore di POSITIVI --- entrambi al valore del giorno corrente
+#### DELTA GIORNO(DECEDUTI) / POSITIVI
+Valore di DELTA GIORNO(DECEDUTI) / Valore di POSITIVI --- entrambi al valore del giorno corrente
+#### DELTA GIORNO(POSITIVI) / POSITIVI - POLY FIT ORD 3
+Un fitting polinomiale di DELTA GIORNO(POSITIVI) / POSITIVI stimato con ordine 3
+#### DELTA GIORNO(OSPEDALIZZATI) / POSITIVI - POLY FIT ORD 3
+Un fitting polinomiale di DELTA GIORNO(OSPEDALIZZATI) / POSITIVI stimato con ordine 3
+#### DELTA GIORNO(GUARITI) / POSITIVI - POLY FIT ORD 3
+Un fitting polinomiale di DELTA GIORNO(GUARITI) / POSITIVI stimato con ordine 3
+#### DELTA GIORNO(TERAPIA INTENSIVA) / POSITIVI - POLY FIT ORD 3
+Un fitting polinomiale di DELTA GIORNO(TERAPIA INTENSIVA) / POSITIVI stimato con ordine 3
+#### DELTA GIORNO(DECEDUTI) / POSITIVI - POLY FIT ORD 3
+Un fitting polinomiale di DELTA GIORNO(DECEDUTI) / POSITIVI stimato con ordine 3
+#### DELTA GIORNO(POSITIVI) / POSITIVI - POLY FIT ORD 2
+Un fitting polinomiale di DELTA GIORNO(POSITIVI) / POSITIVI stimato con ordine 2
+#### DELTA GIORNO(OSPEDALIZZATI) / POSITIVI - POLY FIT ORD 2
+Un fitting polinomiale di DELTA GIORNO(OSPEDALIZZATI) / POSITIVI stimato con ordine 2
+#### DELTA GIORNO(GUARITI) / POSITIVI - POLY FIT ORD 2
+Un fitting polinomiale di DELTA GIORNO(GUARITI) / POSITIVI stimato con ordine 2
+#### DELTA GIORNO(TERAPIA INTENSIVA) / POSITIVI - POLY FIT ORD 2
+Un fitting polinomiale di DELTA GIORNO(TERAPIA INTENSIVA) / POSITIVI stimato con ordine 2
+#### DELTA GIORNO(DECEDUTI) / POSITIVI - POLY FIT ORD 2
+Un fitting polinomiale di DELTA GIORNO(DECEDUTI) / POSITIVI stimato con ordine 2
+#### DELTA GIORNO(POSITIVI) / POSITIVI - POLY FIT ORD 1
+Un fitting polinomiale di DELTA GIORNO(POSITIVI) / POSITIVI stimato con ordine 1
+#### DELTA GIORNO(OSPEDALIZZATI) / POSITIVI - POLY FIT ORD 1
+Un fitting polinomiale di DELTA GIORNO(OSPEDALIZZATI) / POSITIVI stimato con ordine 1
+#### DELTA GIORNO(GUARITI) / POSITIVI - POLY FIT ORD 1
+Un fitting polinomiale di DELTA GIORNO(GUARITI) / POSITIVI stimato con ordine 1
+#### DELTA GIORNO(TERAPIA INTENSIVA) / POSITIVI - POLY FIT ORD 1
+Un fitting polinomiale di DELTA GIORNO(TERAPIA INTENSIVA) / POSITIVI stimato con ordine 1
+#### DELTA GIORNO(DECEDUTI) / POSITIVI - POLY FIT ORD 1
+Un fitting polinomiale di DELTA GIORNO(DECEDUTI) / POSITIVI stimato con ordine 1
+### NEW_VALUES_STACKS
+#### DELTA GIORNO(POSITIVI)
+Valore di POSITIVI oggi - Valore di POSITIVI ieri
+#### POSITIVI DI OGGI
+Il numero di persone trovate positive nel giorno
+#### -DELTA GIORNO(DECEDUTI)
+Negativo di DELTA GIORNO(DECEDUTI)
+#### -DELTA GIORNO(GUARITI)
+Negativo di DELTA GIORNO(GUARITI)
 ### NEW_VALUES_DIFF_TO_YESTERDAY
-#### DAY DELTA(DAY DELTA(POSITIVES))
-Value of DAY DELTA(POSITIVES) of today - Value of DAY DELTA(POSITIVES) of yesterday
-#### DAY DELTA(DAY DELTA(HEALED))
-Value of DAY DELTA(HEALED) of today - Value of DAY DELTA(HEALED) of yesterday
-#### DAY DELTA(DAY DELTA(DECEASED))
-Value of DAY DELTA(DECEASED) of today - Value of DAY DELTA(DECEASED) of yesterday
-#### DAY DELTA(DAY DELTA(INTENSIVE CARE))
-Value of DAY DELTA(INTENSIVE CARE) of today - Value of DAY DELTA(INTENSIVE CARE) of yesterday
+#### DELTA GIORNO(DELTA GIORNO(POSITIVI))
+Valore di DELTA GIORNO(POSITIVI) oggi - Valore di DELTA GIORNO(POSITIVI) ieri
+#### DELTA GIORNO(DELTA GIORNO(GUARITI))
+Valore di DELTA GIORNO(GUARITI) oggi - Valore di DELTA GIORNO(GUARITI) ieri
+#### DELTA GIORNO(DELTA GIORNO(DECEDUTI))
+Valore di DELTA GIORNO(DECEDUTI) oggi - Valore di DELTA GIORNO(DECEDUTI) ieri
+#### DELTA GIORNO(DELTA GIORNO(TERAPIA INTENSIVA))
+Valore di DELTA GIORNO(TERAPIA INTENSIVA) oggi - Valore di DELTA GIORNO(TERAPIA INTENSIVA) ieri
 ### FORECASTS_ON_SPEED
-#### POSITIVES
-The current number of positive people
-#### POSITIVES EST WITH COEFF [DAY DELTA(POSITIVES) / POSITIVES - POLY FIT ORD 2]
-The today value of POSITIVES is recalculated using the value of yesterday for POSITIVES * the factor estimated with DAY DELTA(POSITIVES) / POSITIVES - POLY FIT ORD 2
-#### HOSPITALIZED
-The current number of people in hospital
-#### HOSPITALIZED EST WITH COEFF [DAY DELTA(HOSPITALIZED) / POSITIVES - POLY FIT ORD 2]
-The today value of HOSPITALIZED is recalculated using the value of yesterday for HOSPITALIZED * the factor estimated with DAY DELTA(HOSPITALIZED) / POSITIVES - POLY FIT ORD 2
-#### HEALED
-The number of people healed until now
-#### HEALED EST WITH COEFF [DAY DELTA(HEALED) / POSITIVES - POLY FIT ORD 3]
-The today value of HEALED is recalculated using the value of yesterday for HEALED * the factor estimated with DAY DELTA(HEALED) / POSITIVES - POLY FIT ORD 3
-#### DECEASED
-The number of people deceased until now
-#### DECEASED EST WITH COEFF [DAY DELTA(DECEASED) / POSITIVES - POLY FIT ORD 2]
-The today value of DECEASED is recalculated using the value of yesterday for DECEASED * the factor estimated with DAY DELTA(DECEASED) / POSITIVES - POLY FIT ORD 2
-#### INTENSIVE CARE
-The current number of people in intensive care
-#### INTENSIVE CARE EST WITH COEFF [DAY DELTA(INTENSIVE CARE) / POSITIVES - POLY FIT ORD 2]
-The today value of INTENSIVE CARE is recalculated using the value of yesterday for INTENSIVE CARE * the factor estimated with DAY DELTA(INTENSIVE CARE) / POSITIVES - POLY FIT ORD 2
+#### POSITIVI
+Il numero di persone attualmente positive
+#### POSITIVI STIM CON COEFF [DELTA GIORNO(POSITIVI) / POSITIVI - POLY FIT ORD 2]
+Il valore di oggi di POSITIVI è ricalcolto usando il valore di ieri di POSITIVI * il coefficiente stimato con DELTA GIORNO(POSITIVI) / POSITIVI - POLY FIT ORD 2
+#### OSPEDALIZZATI
+Il numero di persone attualmente in ospedale
+#### OSPEDALIZZATI STIM CON COEFF [DELTA GIORNO(OSPEDALIZZATI) / POSITIVI - POLY FIT ORD 2]
+Il valore di oggi di OSPEDALIZZATI è ricalcolto usando il valore di ieri di OSPEDALIZZATI * il coefficiente stimato con DELTA GIORNO(OSPEDALIZZATI) / POSITIVI - POLY FIT ORD 2
+#### GUARITI
+Il numero di persone guarite fino ad oggi
+#### GUARITI STIM CON COEFF [DELTA GIORNO(GUARITI) / POSITIVI - POLY FIT ORD 3]
+Il valore di oggi di GUARITI è ricalcolto usando il valore di ieri di GUARITI * il coefficiente stimato con DELTA GIORNO(GUARITI) / POSITIVI - POLY FIT ORD 3
+#### DECEDUTI
+Il numero di persone decedute fino ad oggi
+#### DECEDUTI STIM CON COEFF [DELTA GIORNO(DECEDUTI) / POSITIVI - POLY FIT ORD 2]
+Il valore di oggi di DECEDUTI è ricalcolto usando il valore di ieri di DECEDUTI * il coefficiente stimato con DELTA GIORNO(DECEDUTI) / POSITIVI - POLY FIT ORD 2
+#### TERAPIA INTENSIVA
+Il numero di persone attualmente in terapia intensiva
+#### TERAPIA INTENSIVA STIM CON COEFF [DELTA GIORNO(TERAPIA INTENSIVA) / POSITIVI - POLY FIT ORD 2]
+Il valore di oggi di TERAPIA INTENSIVA è ricalcolto usando il valore di ieri di TERAPIA INTENSIVA * il coefficiente stimato con DELTA GIORNO(TERAPIA INTENSIVA) / POSITIVI - POLY FIT ORD 2
