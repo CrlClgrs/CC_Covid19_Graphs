@@ -10,14 +10,15 @@ body {
 </head>
 <body>
   <h3>In this plot we show some overall values</h3>
-  <p>The stacks of the <b>overall cases</b> shows how many people have been in
-    touch with the virus (positives+healed+deceased). This curve will flatten as
-    long as the time goes on meaning that no new cases will be added to the stack.
+  <p>The stacks of the <b>cases</b> shows how many people have been in
+    touch with the virus until the current day (positives+healed+deceased).
+    This curve will flatten as time goes by, meaning that no new cases will be added to the stack.
     Its behaviour is approximated and forecasted with the use of a <i>Logistic</i> curve.
-    The logistic curve is calculated as integration of a <i>Gaussian</i> fitting
+    The Logistic curve is calculated as integration of a <i>Gaussian</i> fitting
     the differential data (i.e. the difference of every day from the the day before).
-    The same forecasting technique is used for the <b>deceased<b> curve.
+    The same forecasting technique is used for the <b>deceased</b> curve.
   </p>
-  <p>The <b>positives</b> ... </p>
+  <p>The <b>positives</b> clearly have a different behaviour: the curve goes like a
+  a Gaussian itself since the positives will return to 0.</p>
 </body>
 </html>
