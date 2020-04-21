@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<link href='https://fonts.googleapis.com/css?family=Ropa Sans' rel='stylesheet'>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<style>
+body {
+    font-family: 'Ropa Sans';font-size: 17px;
+}
+</style>
+</head>
+<body>
+  <h3>In questo grafico vediamo alcuni valori complessivi</h3>
+  <p>Le barre dei <b>casi totali</b> mostrano quante persone sono entrate in contatto
+    con il virus fino al giorno corrente \((\)positivi\(+\)guariti\(+\)deceduti\()\).
+    I casi totali tenderanno ad appiattirsi con il passare del tempo,
+    quando sempre meno persone saranno toccate dalla malattia.
+    L'andamento è approssimato con una curva <i>Logistica</i> che viene
+    proiettata nel futuro come previsione. Questa curva è calcolata come integrale
+    di una <i>Gaussiana</i> che a sua volta viene ricavata tramite una regressione sui
+    dati delle differenze (ossia le differenze tra il valore di oggi e quello di ieri).
+    La stessa tecnica è applicata anche alla curva dei <b>deceduti</b>.
+  </p>
+  <p>I <b>positivi</b> hanno un comportamento differente che segue direttamente quello di una Gaussiana:
+    infatti questa è destinata a tendere a \(0\).</p>
+</body>
+</html>
