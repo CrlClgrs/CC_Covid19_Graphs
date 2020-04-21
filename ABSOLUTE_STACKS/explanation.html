@@ -2,6 +2,10 @@
 <html lang="en-US">
 <head>
 <link href='https://fonts.googleapis.com/css?family=Ropa Sans' rel='stylesheet'>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 <style>
 body {
     font-family: 'Ropa Sans';font-size: 17px;
@@ -9,9 +13,9 @@ body {
 </style>
 </head>
 <body>
-  <h3>In this plot we show some overall values</h3>
+  <h3>In this plot we show the overall values</h3>
   <p>The stacks of the <b>cases</b> shows how many people have been in
-    touch with the virus until the current day (positives+healed+deceased).
+    touch with the virus until the current day \((\)positives\(+\)healed\(+\)deceased\()\).
     This curve will flatten as time goes by, meaning that no new cases will be added to the stack.
     Its behaviour is approximated and forecasted with the use of a <i>Logistic</i> curve.
     The Logistic curve is calculated as integration of a <i>Gaussian</i> fitting
@@ -19,6 +23,6 @@ body {
     The same forecasting technique is used for the <b>deceased</b> curve.
   </p>
   <p>The <b>positives</b> clearly have a different behaviour: the curve goes like a
-  a Gaussian itself since the positives will return to 0.</p>
+  a Gaussian itself since the infected will return to 0.</p>
 </body>
 </html>

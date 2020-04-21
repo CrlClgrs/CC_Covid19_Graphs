@@ -2,6 +2,10 @@
 <html lang="en-US">
 <head>
 <link href='https://fonts.googleapis.com/css?family=Ropa Sans' rel='stylesheet'>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 <style>
 body {
     font-family: 'Ropa Sans';font-size: 17px;
@@ -9,17 +13,15 @@ body {
 </style>
 </head>
 <body>
-  <h3>In this plot we show the acceleration or deceleration os some variables</h3>
-  <p>When we look at variables that are calculated like differences (Delta) from
-  day before, those variables somehow resemble the <i>speed</i> of the
-  underlying descripted object.
-  In this case we plot the difference of differences.
-  Hence, a value greater
-  than zero says that the variable is <i>accelerating</i> i.e. it is consistently
-  gaining (or losing if it is less than zero) amount.
+  <h3>In this plot we show the acceleration or deceleration</h3>
+  <p>Some variables are calculated as differences (\(\Delta\)) from
+  day before, those variables resemble the <i>speed</i> of the descripted object.
+  In this plot we show the difference of differences.
+  Hence, a value greater than \(0\) says that the variable is <i>accelerating</i> i.e. it is
+  gaining (or losing, if it is less than zero) momentum.
   </p>
   <p>The greater the bar, the bigger the difference between today and the day before.</p>
-  <p>Actually, this plot has a signficant meaning whether a particular and constant trend
+  <p>Actually, this plot is meaningful whether a particular and constant trend
     can be identified. Oscillating values are less significative.</p>
 </body>
 </html>
