@@ -12,7 +12,7 @@ https://crlclgrs.github.io/CC_Covid19_Graphs/it/index.html
 If you have any question, feel free to ask on Twitter:
 [@ClgClgrs](https://twitter.com/intent/tweet?screen_name=CrlClgrs&ref_src=twsrc%5Etfw)
 
-## Updated to 25-Apr-2020
+## Updated to 26-Apr-2020
 
 This is a simple project that takes data from
 [Dati COVID-19 Italia](https://github.com/pcm-dpc/COVID-19).
