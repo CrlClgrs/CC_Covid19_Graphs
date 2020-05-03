@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>COMPARAZIONE AREE REGIONI</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <div id='target' ></div>
+        <script>
+        var target_target = document.getElementById('target');
+        var layout = {
+    title: 'COMPARAZIONE AREE REGIONI',
+    height: 700,
+    width: 1500,
+    showlegend: true,
+    hovermode: 'x',
+    xaxis: {
+    title: 'POSITIVES / POPULATION',
+    },
+
+    yaxis: {
+    title: '(POSITIVES TODAY) / (POSITIVES 10 DD BACK)',
+    },
+
+};
+
+var trace0 =
+{
+x: ["0.0036856687"],
+y: ["1.0901307826"],
+showlegend: true,
+marker: {
+    size: 110.570061,
+},
+mode: 'markers',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'Lombardia',
+};
+var trace1 =
+{
+x: ["0.0035601383"],
+y: ["1.0320749736"],
+showlegend: true,
+marker: {
+    size: 106.80414900000001,
+},
+mode: 'markers',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'Piemonte',
+};
+var trace2 =
+{
+x: ["0.0022685646"],
+y: ["1.0245239469"],
+showlegend: true,
+marker: {
+    size: 68.056938,
+},
+mode: 'markers',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'Liguria',
+};
+var trace3 =
+{
+x: ["0.002215471"],
+y: ["0.6664885088"],
+showlegend: true,
+marker: {
+    size: 66.46413,
+},
+mode: 'markers',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'P.A. Trento',
+};
+var trace4 =
+{
+x: ["0.0020792494"],
+y: ["0.9900928793"],
+showlegend: true,
+marker: {
+    size: 62.37748200000001,
+},
+mode: 'markers',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'Marche',
+};
+var trace5 =
+{
+x: ["0.0020331138"],
+y: ["0.7041650448"],
+showlegend: true,
+marker: {
+    size: 60.993413999999994,
+},
+mode: 'markers',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'Emilia-Romagna',
+};
+var trace6 =
+{
+x: ["0.0014873065"],
+y: ["0.7354156171"],
+showlegend: true,
+marker: {
+    size: 44.619195,
+},
+mode: 'markers',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'Veneto',
+};
+var trace7 =
+{
+x: ["0.0014236713"],
+y: ["0.8633932912"],
+showlegend: true,
+marker: {
+    size: 42.710139,
+},
+mode: 'markers',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'Toscana',
+};
+var trace8 =
+{
+x: ["0.0014127466"],
+y: ["0.8895238095"],
+showlegend: true,
+marker: {
+    size: 42.382398,
+},
+mode: 'markers',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'Abruzzo',
+};
+var trace9 =
+{
+x: ["0.00133"],
+y: ["0.4451137885"],
+showlegend: true,
+marker: {
+    size: 39.9,
+},
+mode: 'markers',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'P.A. Bolzano',
+};
+var trace10 =
+{
+x: ["8.925404E-4"],
+y: ["0.9577092511"],
+showlegend: true,
+marker: {
+    size: 26.776211999999997,
+},
+mode: 'markers',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'Friuli Venezia Giulia',
+};
+var trace11 =
+{
+x: ["8.590591E-4"],
+y: ["0.2354211663"],
+showlegend: true,
+marker: {
+    size: 25.771773000000003,
+},
+mode: 'markers',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'Valle d&#39;Aosta',
+};
+var trace12 =
+{
+x: ["7.434567E-4"],
+y: ["0.9774855105"],
+showlegend: true,
+marker: {
+    size: 22.303701,
+},
+mode: 'markers',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'Lazio',
+};
+var trace13 =
+{
+x: ["7.271362E-4"],
+y: ["1.0064713896"],
+showlegend: true,
+marker: {
+    size: 21.814086,
+},
+mode: 'markers',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'Puglia',
+};
+var trace14 =
+{
+x: ["5.830265E-4"],
+y: ["0.9141414141"],
+showlegend: true,
+marker: {
+    size: 17.490795,
+},
+mode: 'markers',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'Molise',
+};
+var trace15 =
+{
+x: ["4.66854E-4"],
+y: ["0.9153794493"],
+showlegend: true,
+marker: {
+    size: 14.00562,
+},
+mode: 'markers',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'Campania',
+};
+var trace16 =
+{
+x: ["4.356647E-4"],
+y: ["0.9574098218"],
+showlegend: true,
+marker: {
+    size: 13.069941,
+},
+mode: 'markers',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'Sicilia',
+};
+var trace17 =
+{
+x: ["4.167839E-4"],
+y: ["0.8433292534"],
+showlegend: true,
+marker: {
+    size: 12.503516999999999,
+},
+mode: 'markers',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'Sardegna',
+};
+var trace18 =
+{
+x: ["3.572286E-4"],
+y: ["0.8529769137"],
+showlegend: true,
+marker: {
+    size: 10.716858,
+},
+mode: 'markers',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'Calabria',
+};
+var trace19 =
+{
+x: ["3.401331E-4"],
+y: ["0.8471615721"],
+showlegend: true,
+marker: {
+    size: 10.203992999999999,
+},
+mode: 'markers',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'Basilicata',
+};
+var trace20 =
+{
+x: ["2.058706E-4"],
+y: ["0.5154929577"],
+showlegend: true,
+marker: {
+    size: 6.176118,
+},
+mode: 'markers',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'Umbria',
+};
+
+        var data = [ trace0, trace1, trace2, trace3, trace4, trace5, trace6, trace7, trace8, trace9, trace10, trace11, trace12, trace13, trace14, trace15, trace16, trace17, trace18, trace19, trace20];
+Plotly.newPlot(target_target, data, layout);            </script>
+
+</body>
+</html>
