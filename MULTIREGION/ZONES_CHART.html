@@ -11,33 +11,39 @@
         var target_target = document.getElementById('target');
         var layout = {
     title: 'AREAS / REGIONS COMPARISON',
-    height: 700,
-    width: 1500,
+    height: 800,
+    width: 1400,
     showlegend: true,
     hovermode: 'x',
     xaxis: {
-    title: '',
+    title: 'Value of POSITIVES / Value of POPULATION --- both at the value of the current day',
     tickmode: 'linear',
     tickcolor: '#444',
     ticklen: 5,
     tickwidth: 1,
     showticklabels: true,
-    nticks: '100',
+    nticks: '1000',
     },
 
     yaxis: {
-    title: '(POSITIVES TODAY) / (POSITIVES 10 DD BACK)',
+    title: 'Value of POSITIVES of today / Value of POSITIVES of 10 before',
+    tickmode: 'linear',
+    tickcolor: '#444',
+    ticklen: 5,
+    tickwidth: 1,
+    showticklabels: true,
+    nticks: '1000',
     },
 
 };
 
 var trace0 =
 {
-x: ["0.0161566167"],
-y: ["1.8755718207"],
+x: ["0.0167398312"],
+y: ["1.7984758679"],
 showlegend: true,
 marker: {
-    size: 25.625,
+    size: 26.55,
 },
 mode: 'markers',
 opacity: '0.5',
@@ -48,11 +54,11 @@ name: 'Valle d&#39;Aosta',
 };
 var trace1 =
 {
-x: ["0.013104"],
-y: ["2.2941176471"],
+x: ["0.013592"],
+y: ["2.1324129275"],
 showlegend: true,
 marker: {
-    size: 81.9,
+    size: 84.95,
 },
 mode: 'markers',
 opacity: '0.5',
@@ -63,11 +69,11 @@ name: 'P.A. Bolzano',
 };
 var trace2 =
 {
-x: ["0.0098380985"],
-y: ["2.3091484128"],
+x: ["0.0104536409"],
+y: ["2.1827105433"],
 showlegend: true,
 marker: {
-    size: 1232.075,
+    size: 1309.1625,
 },
 mode: 'markers',
 opacity: '0.5',
@@ -78,11 +84,11 @@ name: 'Lombardia',
 };
 var trace3 =
 {
-x: ["0.0090628112"],
-y: ["2.1619709332"],
+x: ["0.0094761782"],
+y: ["2.0475750577"],
 showlegend: true,
 marker: {
-    size: 423.9625,
+    size: 443.3,
 },
 mode: 'markers',
 opacity: '0.5',
@@ -93,11 +99,11 @@ name: 'Toscana',
 };
 var trace4 =
 {
-x: ["0.0088133798"],
-y: ["2.1696463599"],
+x: ["0.0094653964"],
+y: ["2.0917140414"],
 showlegend: true,
 marker: {
-    size: 483.9125,
+    size: 519.7125,
 },
 mode: 'markers',
 opacity: '0.5',
@@ -108,11 +114,11 @@ name: 'Piemonte',
 };
 var trace5 =
 {
-x: ["0.0086861227"],
-y: ["1.9282591339"],
+x: ["0.0093316006"],
+y: ["1.8972144847"],
 showlegend: true,
 marker: {
-    size: 633.9875,
+    size: 681.1,
 },
 mode: 'markers',
 opacity: '0.5',
@@ -123,11 +129,11 @@ name: 'Campania',
 };
 var trace6 =
 {
-x: ["0.008512692"],
-y: ["1.8818701815"],
+x: ["0.0088153105"],
+y: ["1.7829351536"],
 showlegend: true,
 marker: {
-    size: 94.5875,
+    size: 97.95,
 },
 mode: 'markers',
 opacity: '0.5',
@@ -138,11 +144,11 @@ name: 'Umbria',
 };
 var trace7 =
 {
-x: ["0.0071657243"],
-y: ["2.2512003073"],
+x: ["0.0076486558"],
+y: ["2.2116427056"],
 showlegend: true,
 marker: {
-    size: 439.575,
+    size: 469.2,
 },
 mode: 'markers',
 opacity: '0.5',
@@ -153,11 +159,11 @@ name: 'Veneto',
 };
 var trace8 =
 {
-x: ["0.0067358706"],
-y: ["1.8560616678"],
+x: ["0.0071010715"],
+y: ["1.8357659435"],
 showlegend: true,
 marker: {
-    size: 496.6125,
+    size: 523.5375,
 },
 mode: 'markers',
 opacity: '0.5',
@@ -168,11 +174,11 @@ name: 'Lazio',
 };
 var trace9 =
 {
-x: ["0.0063719967"],
-y: ["2.077994429"],
+x: ["0.0067374851"],
+y: ["2.0214459131"],
 showlegend: true,
 marker: {
-    size: 354.35,
+    size: 374.675,
 },
 mode: 'markers',
 opacity: '0.5',
@@ -183,11 +189,11 @@ name: 'Emilia-Romagna',
 };
 var trace10 =
 {
-x: ["0.0062792794"],
-y: ["1.7064236111"],
+x: ["0.0066868672"],
+y: ["1.7340954274"],
 showlegend: true,
 marker: {
-    size: 122.8625,
+    size: 130.8375,
 },
 mode: 'markers',
 opacity: '0.5',
@@ -198,11 +204,11 @@ name: 'Liguria',
 };
 var trace11 =
 {
-x: ["0.005783337"],
-y: ["2.0435595938"],
+x: ["0.006074508"],
+y: ["1.9662178703"],
 showlegend: true,
 marker: {
-    size: 95.5875,
+    size: 100.4,
 },
 mode: 'markers',
 opacity: '0.5',
@@ -213,11 +219,11 @@ name: 'Abruzzo',
 };
 var trace12 =
 {
-x: ["0.0048223243"],
-y: ["2.2482570476"],
+x: ["0.0052000741"],
+y: ["2.1465378422"],
 showlegend: true,
 marker: {
-    size: 92.7125,
+    size: 99.975,
 },
 mode: 'markers',
 opacity: '0.5',
@@ -228,11 +234,11 @@ name: 'Marche',
 };
 var trace13 =
 {
-x: ["0.0047279189"],
-y: ["2.0742074928"],
+x: ["0.0049110251"],
+y: ["1.9758837132"],
 showlegend: true,
 marker: {
-    size: 71.975,
+    size: 74.7625,
 },
 mode: 'markers',
 opacity: '0.5',
@@ -243,11 +249,11 @@ name: 'Friuli Venezia Giulia',
 };
 var trace14 =
 {
-x: ["0.0041787271"],
-y: ["1.5063235935"],
+x: ["0.0042634147"],
+y: ["1.4825410181"],
 showlegend: true,
 marker: {
-    size: 86.35,
+    size: 88.1,
 },
 mode: 'markers',
 opacity: '0.5',
@@ -258,11 +264,11 @@ name: 'Sardegna',
 };
 var trace15 =
 {
-x: ["0.0040187613"],
-y: ["1.800955414"],
+x: ["0.0041182532"],
+y: ["1.7402402402"],
 showlegend: true,
 marker: {
-    size: 28.275,
+    size: 28.975,
 },
 mode: 'markers',
 opacity: '0.5',
@@ -273,11 +279,11 @@ name: 'P.A. Trento',
 };
 var trace16 =
 {
-x: ["0.0040070994"],
-y: ["2.3695238095"],
+x: ["0.0040006571"],
+y: ["2.2581818182"],
 showlegend: true,
 marker: {
-    size: 15.55,
+    size: 15.525,
 },
 mode: 'markers',
 opacity: '0.5',
@@ -288,11 +294,11 @@ name: 'Molise',
 };
 var trace17 =
 {
-x: ["0.0033280937"],
-y: ["1.8281968099"],
+x: ["0.0035023111"],
+y: ["1.8080538618"],
 showlegend: true,
 marker: {
-    size: 169.0625,
+    size: 177.9125,
 },
 mode: 'markers',
 opacity: '0.5',
@@ -303,26 +309,11 @@ name: 'Puglia',
 };
 var trace18 =
 {
-x: ["0.0033235502"],
-y: ["1.699464051"],
+x: ["0.0034960069"],
+y: ["1.9684106614"],
 showlegend: true,
 marker: {
-    size: 210.075,
-},
-mode: 'markers',
-opacity: '0.5',
-xaxis: 'x',
-yaxis: 'y',
-type: 'scatter',
-name: 'Sicilia',
-};
-var trace19 =
-{
-x: ["0.0031190553"],
-y: ["1.8825396825"],
-showlegend: true,
-marker: {
-    size: 22.2375,
+    size: 24.925,
 },
 mode: 'markers',
 opacity: '0.5',
@@ -331,13 +322,28 @@ yaxis: 'y',
 type: 'scatter',
 name: 'Basilicata',
 };
-var trace20 =
+var trace19 =
 {
-x: ["0.0018522966"],
-y: ["1.9686316928"],
+x: ["0.0034841311"],
+y: ["1.6691615348"],
 showlegend: true,
 marker: {
-    size: 45.5,
+    size: 220.225,
+},
+mode: 'markers',
+opacity: '0.5',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'Sicilia',
+};
+var trace20 =
+{
+x: ["0.0019810414"],
+y: ["1.9339294585"],
+showlegend: true,
+marker: {
+    size: 48.6625,
 },
 mode: 'markers',
 opacity: '0.5',
