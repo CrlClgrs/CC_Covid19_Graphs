@@ -1,399 +1,431 @@
 <html>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
 
-<style>
+    <style>
 
-body, html {
-  height: 100%;
-  font-family: "Inconsolata", sans-serif;
-  overflow-wrap: anywhere;
-}
-h4 {
-  font-family: "Inconsolata", sans-serif;
-}
-h5 {
-  font-family: "Inconsolata", sans-serif;
-  font-size: 100%;
-  background-color: #123456;
-}
-.menu {
-  display: none;
-}
-.accordion {
-  background-color: #44bc89;
-  color: #111aaa;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 35px;
-  transition: 0.4s;
-}
-.active, .accordion:hover {
-  background-color: #eee000;
-}
-.panel {
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-* {
-  box-sizing:border-box;
-}
-.left {
-  background-color:#fff;
-  padding:1px;
-  float:left;
-  width:20%; /* The width is 20%, by default */
-}
-.main {
-  background-color:#fff;
-  padding:1px;
-  float:left;
-  width:60%; /* The width is 60%, by default */
-}
-.right {
-  background-color:#fff;
-  padding:1px;
-  float:left;
-  width:20%; /* The width is 20%, by default */
-}
-@media screen and (max-width:800px) {
-  .left, .main, .right {
-    width:100%; /* The width is 100%, when the viewport is 800px or smaller */
-  }
-}
-</style>
-
-
-<body onload="scrollWin()">
-  Per dettagli sul significato dei vari grafici, fare riferimento alla <a href='https://github.com/CrlClgrs/CC_Covid19_Graphs/blob/master/README_IT.md'>pagina del progetto</a> su GitHub
-  <BR>
-  Se ci sono domande, scrivetemi su Twitter:
-  <a href="https://twitter.com/intent/tweet?screen_name=CrlClgrs&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @CrlClgrs</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-  <button class="accordion">NAZIONE</button>
-  <div class="panel">
-    <div class="w3-container w3-green"><h4>Italy</h4></div>
-      <table style="width:100%; border: 1px solid black; background-color: #a1f1c1;">
-      <div class="w3-quarter"><a href="ABSOLUTE_STACKS/NATION/ITALYWrapper.html">ABSOLUTE_STACKS</a></div>
-      <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/NATION/ITALYWrapper.html">FORECASTS_ON_SPEED</a></div>
-      <div class="w3-quarter"><a href="NEW_VALUES_DIFF_TO_YESTERDAY/NATION/ITALYWrapper.html">NEW_VALUES_DIFF_TO_YESTERDAY</a></div>
-      <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/NATION/ITALYWrapper.html">NEW_VALUES_IN_DAY</a></div>
-      <div class="w3-quarter"><a href="NEW_VALUES_STACKS/NATION/ITALYWrapper.html">NEW_VALUES_STACKS</a></div>
-      <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/NATION/ITALYWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
-      <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/NATION/ITALYWrapper.html">RELATIVE_CHARTS_1</a></div>
-      <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/NATION/ITALYWrapper.html">RELATIVE_CHARTS_2</a></div>
-      </table>
-  </div>
-
-  <button class="accordion">ZONA GEOGRAFICA</button>
-  <div class="panel">
-    <div class="w3-container w3-green"><h4>Nord</h4></div>
-    <table style="width:100%; border: 1px solid black; background-color: #a1f1c1;">
-    <div class="w3-quarter"><a href="ABSOLUTE_STACKS/GEO/NORTHWrapper.html">ABSOLUTE_STACKS</a></div>
-    <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/GEO/NORTHWrapper.html">FORECASTS_ON_SPEED</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_DIFF_TO_YESTERDAY/GEO/NORTHWrapper.html">NEW_VALUES_DIFF_TO_YESTERDAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/GEO/NORTHWrapper.html">NEW_VALUES_IN_DAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_STACKS/GEO/NORTHWrapper.html">NEW_VALUES_STACKS</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/GEO/NORTHWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/GEO/NORTHWrapper.html">RELATIVE_CHARTS_1</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/GEO/NORTHWrapper.html">RELATIVE_CHARTS_2</a></div>
-    </table>
-    <div class="w3-container w3-green"><h4>Centro</h4></div>
-    <table style="width:100%; border: 1px solid black; background-color: #a1f1c1;">
-    <div class="w3-quarter"><a href="ABSOLUTE_STACKS/GEO/CENTERWrapper.html">ABSOLUTE_STACKS</a></div>
-    <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/GEO/CENTERWrapper.html">FORECASTS_ON_SPEED</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_DIFF_TO_YESTERDAY/GEO/CENTERWrapper.html">NEW_VALUES_DIFF_TO_YESTERDAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/GEO/CENTERWrapper.html">NEW_VALUES_IN_DAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_STACKS/GEO/CENTERWrapper.html">NEW_VALUES_STACKS</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/GEO/CENTERWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/GEO/CENTERWrapper.html">RELATIVE_CHARTS_1</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/GEO/CENTERWrapper.html">RELATIVE_CHARTS_2</a></div>
-    </table>
-    <div class="w3-container w3-green"><h4>Sud</h4></div>
-    <table style="width:100%; border: 1px solid black; background-color: #a1f1c1;">
-    <div class="w3-quarter"><a href="ABSOLUTE_STACKS/GEO/SOUTHWrapper.html">ABSOLUTE_STACKS</a></div>
-    <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/GEO/SOUTHWrapper.html">FORECASTS_ON_SPEED</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_DIFF_TO_YESTERDAY/GEO/SOUTHWrapper.html">NEW_VALUES_DIFF_TO_YESTERDAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/GEO/SOUTHWrapper.html">NEW_VALUES_IN_DAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_STACKS/GEO/SOUTHWrapper.html">NEW_VALUES_STACKS</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/GEO/SOUTHWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/GEO/SOUTHWrapper.html">RELATIVE_CHARTS_1</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/GEO/SOUTHWrapper.html">RELATIVE_CHARTS_2</a></div>
-    </table>
-  </div>
+        body, html {
+            height: 100%;
+            font-family: "Inconsolata", sans-serif;
+            overflow-wrap: anywhere;
+        }
+          h3 {
+            font-family: "Inconsolata", sans-serif;
+            font-size: 100%;
+            color: #123456;
+            background-color: #ffffff;
+        }
+        
+        h4 {
+            font-family: "Inconsolata", sans-serif;
+        }
+        h5 {
+            font-family: "Inconsolata", sans-serif;
+            font-size: 100%;
+            background-color: #123456;
+        }
+        .menu {
+            display: none;
+        }
+        .accordion {
+            background-color: #44bc89;
+            color: #111aaa;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 35px;
+            transition: 0.4s;
+        }
+        .active, .accordion:hover {
+            background-color: #eee000;
+        }
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+        * {
+            box-sizing:border-box;
+        }
+        .left {
+            background-color:#fff;
+            padding:1px;
+            float:left;
+            width:20%; /* The width is 20%, by default */
+        }
+        .main {
+            background-color:#fff;
+            padding:1px;
+            float:left;
+            width:60%; /* The width is 60%, by default */
+        }
+        .right {
+            background-color:#fff;
+            padding:1px;
+            float:left;
+            width:20%; /* The width is 20%, by default */
+        }
+        @media screen and (max-width:800px) {
+            .left, .main, .right {
+                width:100%; /* The width is 100%, when the viewport is 800px or smaller */
+            }
+        }
+    </style>
 
 
+    <body onload="scrollWin()">
+        Per dettagli sul significato dei vari grafici, fare riferimento alla <a href='https://github.com/CrlClgrs/CC_Covid19_Graphs/blob/master/README_IT.md'>pagina del progetto</a> su GitHub
+        <BR>
+        Se ci sono domande, scrivetemi su Twitter:
+        <a href="https://twitter.com/intent/tweet?screen_name=CrlClgrs&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @CrlClgrs</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-  <div class="w3-container w3-green"><h5>Grafici Comparazione Regioni:
-    <a href="MULTIREGION/POSITIVI_ON_POP.html">Positivi Rispetto Popolazione</a>,
-    <a href="MULTIREGION/GUARITI_ON_POP.html">Guariti Rispetto Popolazione</a>,
-    <a href="MULTIREGION/DECEDUTI_ON_POP.html">Deceduti Rispetto Popolazione</a>,
-    <a href="MULTIREGION/POSITIVI_DAY_ON_TAMPONI_DAY.html">Positivi Su Tamponi (Giorno)</a>,
-    <a href="MULTIREGION/ZONES_CHART.html">Mappa Zone</a>
-  </div>
-  <button class="accordion">REGIONE</button>
-  <div class="panel">
-    <div class="w3-container w3-green"><h4>Abruzzo</h4></div>
-    <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
-    <div class="w3-quarter"><a href="ABSOLUTE_STACKS/REGION/AbruzzoWrapper.html">ABSOLUTE_STACKS</a></div>
-    <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/REGION/AbruzzoWrapper.html">FORECASTS_ON_SPEED</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_DIFF_TO_YESTERDAY/REGION/AbruzzoWrapper.html">NEW_VALUES_DIFF_TO_YESTERDAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/REGION/AbruzzoWrapper.html">NEW_VALUES_IN_DAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_STACKS/REGION/AbruzzoWrapper.html">NEW_VALUES_STACKS</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/AbruzzoWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/AbruzzoWrapper.html">RELATIVE_CHARTS_1</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/REGION/AbruzzoWrapper.html">RELATIVE_CHARTS_2</a></div>
-    </table>
-    <div class="w3-container w3-green"><h4>Basilicata</h4></div>
-    <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
-    <div class="w3-quarter"><a href="ABSOLUTE_STACKS/REGION/BasilicataWrapper.html">ABSOLUTE_STACKS</a></div>
-    <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/REGION/BasilicataWrapper.html">FORECASTS_ON_SPEED</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_DIFF_TO_YESTERDAY/REGION/BasilicataWrapper.html">NEW_VALUES_DIFF_TO_YESTERDAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/REGION/BasilicataWrapper.html">NEW_VALUES_IN_DAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_STACKS/REGION/BasilicataWrapper.html">NEW_VALUES_STACKS</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/BasilicataWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/BasilicataWrapper.html">RELATIVE_CHARTS_1</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/REGION/BasilicataWrapper.html">RELATIVE_CHARTS_2</a></div>
-    </table>
-    <div class="w3-container w3-green"><h4>Calabria</h4></div>
-    <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
-    <div class="w3-quarter"><a href="ABSOLUTE_STACKS/REGION/CalabriaWrapper.html">ABSOLUTE_STACKS</a></div>
-    <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/REGION/CalabriaWrapper.html">FORECASTS_ON_SPEED</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_DIFF_TO_YESTERDAY/REGION/CalabriaWrapper.html">NEW_VALUES_DIFF_TO_YESTERDAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/REGION/CalabriaWrapper.html">NEW_VALUES_IN_DAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_STACKS/REGION/CalabriaWrapper.html">NEW_VALUES_STACKS</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/CalabriaWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/CalabriaWrapper.html">RELATIVE_CHARTS_1</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/REGION/CalabriaWrapper.html">RELATIVE_CHARTS_2</a></div>
-    </table>
-    <div class="w3-container w3-green"><h4>Campania</h4></div>
-    <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
-    <div class="w3-quarter"><a href="ABSOLUTE_STACKS/REGION/CampaniaWrapper.html">ABSOLUTE_STACKS</a></div>
-    <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/REGION/CampaniaWrapper.html">FORECASTS_ON_SPEED</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_DIFF_TO_YESTERDAY/REGION/CampaniaWrapper.html">NEW_VALUES_DIFF_TO_YESTERDAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/REGION/CampaniaWrapper.html">NEW_VALUES_IN_DAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_STACKS/REGION/CampaniaWrapper.html">NEW_VALUES_STACKS</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/CampaniaWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/CampaniaWrapper.html">RELATIVE_CHARTS_1</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/REGION/CampaniaWrapper.html">RELATIVE_CHARTS_2</a></div>
-    </table>
-    <div class="w3-container w3-green"><h4>Emilia-Romagna</h4></div>
-    <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
-    <div class="w3-quarter"><a href="ABSOLUTE_STACKS/REGION/Emilia-RomagnaWrapper.html">ABSOLUTE_STACKS</a></div>
-    <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/REGION/Emilia-RomagnaWrapper.html">FORECASTS_ON_SPEED</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_DIFF_TO_YESTERDAY/REGION/Emilia-RomagnaWrapper.html">NEW_VALUES_DIFF_TO_YESTERDAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/REGION/Emilia-RomagnaWrapper.html">NEW_VALUES_IN_DAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_STACKS/REGION/Emilia-RomagnaWrapper.html">NEW_VALUES_STACKS</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/Emilia-RomagnaWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/Emilia-RomagnaWrapper.html">RELATIVE_CHARTS_1</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/REGION/Emilia-RomagnaWrapper.html">RELATIVE_CHARTS_2</a></div>
-    </table>
-    <div class="w3-container w3-green"><h4>Friuli Venezia Giulia</h4></div>
-    <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
-    <div class="w3-quarter"><a href="ABSOLUTE_STACKS/REGION/Friuli Venezia GiuliaWrapper.html">ABSOLUTE_STACKS</a></div>
-    <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/REGION/Friuli Venezia GiuliaWrapper.html">FORECASTS_ON_SPEED</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_DIFF_TO_YESTERDAY/REGION/Friuli Venezia GiuliaWrapper.html">NEW_VALUES_DIFF_TO_YESTERDAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/REGION/Friuli Venezia GiuliaWrapper.html">NEW_VALUES_IN_DAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_STACKS/REGION/Friuli Venezia GiuliaWrapper.html">NEW_VALUES_STACKS</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/Friuli Venezia GiuliaWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/Friuli Venezia GiuliaWrapper.html">RELATIVE_CHARTS_1</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/REGION/Friuli Venezia GiuliaWrapper.html">RELATIVE_CHARTS_2</a></div>
-    </table>
-    <div class="w3-container w3-green"><h4>Lazio</h4></div>
-    <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
-    <div class="w3-quarter"><a href="ABSOLUTE_STACKS/REGION/LazioWrapper.html">ABSOLUTE_STACKS</a></div>
-    <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/REGION/LazioWrapper.html">FORECASTS_ON_SPEED</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_DIFF_TO_YESTERDAY/REGION/LazioWrapper.html">NEW_VALUES_DIFF_TO_YESTERDAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/REGION/LazioWrapper.html">NEW_VALUES_IN_DAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_STACKS/REGION/LazioWrapper.html">NEW_VALUES_STACKS</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/LazioWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/LazioWrapper.html">RELATIVE_CHARTS_1</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/REGION/LazioWrapper.html">RELATIVE_CHARTS_2</a></div>
-    </table>
-    <div class="w3-container w3-green"><h4>Liguria</h4></div>
-    <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
-    <div class="w3-quarter"><a href="ABSOLUTE_STACKS/REGION/LiguriaWrapper.html">ABSOLUTE_STACKS</a></div>
-    <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/REGION/LiguriaWrapper.html">FORECASTS_ON_SPEED</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_DIFF_TO_YESTERDAY/REGION/LiguriaWrapper.html">NEW_VALUES_DIFF_TO_YESTERDAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/REGION/LiguriaWrapper.html">NEW_VALUES_IN_DAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_STACKS/REGION/LiguriaWrapper.html">NEW_VALUES_STACKS</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/LiguriaWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/LiguriaWrapper.html">RELATIVE_CHARTS_1</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/REGION/LiguriaWrapper.html">RELATIVE_CHARTS_2</a></div>
-    </table>
-    <div class="w3-container w3-green"><h4>Lombardia</h4></div>
-    <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
-    <div class="w3-quarter"><a href="ABSOLUTE_STACKS/REGION/LombardiaWrapper.html">ABSOLUTE_STACKS</a></div>
-    <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/REGION/LombardiaWrapper.html">FORECASTS_ON_SPEED</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_DIFF_TO_YESTERDAY/REGION/LombardiaWrapper.html">NEW_VALUES_DIFF_TO_YESTERDAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/REGION/LombardiaWrapper.html">NEW_VALUES_IN_DAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_STACKS/REGION/LombardiaWrapper.html">NEW_VALUES_STACKS</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/LombardiaWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/LombardiaWrapper.html">RELATIVE_CHARTS_1</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/REGION/LombardiaWrapper.html">RELATIVE_CHARTS_2</a></div>
-    </table>
-    <div class="w3-container w3-green"><h4>Marche</h4></div>
-    <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
-    <div class="w3-quarter"><a href="ABSOLUTE_STACKS/REGION/MarcheWrapper.html">ABSOLUTE_STACKS</a></div>
-    <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/REGION/MarcheWrapper.html">FORECASTS_ON_SPEED</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_DIFF_TO_YESTERDAY/REGION/MarcheWrapper.html">NEW_VALUES_DIFF_TO_YESTERDAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/REGION/MarcheWrapper.html">NEW_VALUES_IN_DAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_STACKS/REGION/MarcheWrapper.html">NEW_VALUES_STACKS</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/MarcheWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/MarcheWrapper.html">RELATIVE_CHARTS_1</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/REGION/MarcheWrapper.html">RELATIVE_CHARTS_2</a></div>
-    </table>
-    <div class="w3-container w3-green"><h4>Molise</h4></div>
-    <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
-    <div class="w3-quarter"><a href="ABSOLUTE_STACKS/REGION/MoliseWrapper.html">ABSOLUTE_STACKS</a></div>
-    <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/REGION/MoliseWrapper.html">FORECASTS_ON_SPEED</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_DIFF_TO_YESTERDAY/REGION/MoliseWrapper.html">NEW_VALUES_DIFF_TO_YESTERDAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/REGION/MoliseWrapper.html">NEW_VALUES_IN_DAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_STACKS/REGION/MoliseWrapper.html">NEW_VALUES_STACKS</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/MoliseWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/MoliseWrapper.html">RELATIVE_CHARTS_1</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/REGION/MoliseWrapper.html">RELATIVE_CHARTS_2</a></div>
-    </table>
-    <div class="w3-container w3-green"><h4>P.A. Bolzano</h4></div>
-    <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
-    <div class="w3-quarter"><a href="ABSOLUTE_STACKS/REGION/P.A. BolzanoWrapper.html">ABSOLUTE_STACKS</a></div>
-    <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/REGION/P.A. BolzanoWrapper.html">FORECASTS_ON_SPEED</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_DIFF_TO_YESTERDAY/REGION/P.A. BolzanoWrapper.html">NEW_VALUES_DIFF_TO_YESTERDAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/REGION/P.A. BolzanoWrapper.html">NEW_VALUES_IN_DAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_STACKS/REGION/P.A. BolzanoWrapper.html">NEW_VALUES_STACKS</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/P.A. BolzanoWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/P.A. BolzanoWrapper.html">RELATIVE_CHARTS_1</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/REGION/P.A. BolzanoWrapper.html">RELATIVE_CHARTS_2</a></div>
-    </table>
-    <div class="w3-container w3-green"><h4>P.A. Trento</h4></div>
-    <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
-    <div class="w3-quarter"><a href="ABSOLUTE_STACKS/REGION/P.A. TrentoWrapper.html">ABSOLUTE_STACKS</a></div>
-    <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/REGION/P.A. TrentoWrapper.html">FORECASTS_ON_SPEED</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_DIFF_TO_YESTERDAY/REGION/P.A. TrentoWrapper.html">NEW_VALUES_DIFF_TO_YESTERDAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/REGION/P.A. TrentoWrapper.html">NEW_VALUES_IN_DAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_STACKS/REGION/P.A. TrentoWrapper.html">NEW_VALUES_STACKS</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/P.A. TrentoWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/P.A. TrentoWrapper.html">RELATIVE_CHARTS_1</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/REGION/P.A. TrentoWrapper.html">RELATIVE_CHARTS_2</a></div>
-    </table>
-    <div class="w3-container w3-green"><h4>Piemonte</h4></div>
-    <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
-    <div class="w3-quarter"><a href="ABSOLUTE_STACKS/REGION/PiemonteWrapper.html">ABSOLUTE_STACKS</a></div>
-    <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/REGION/PiemonteWrapper.html">FORECASTS_ON_SPEED</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_DIFF_TO_YESTERDAY/REGION/PiemonteWrapper.html">NEW_VALUES_DIFF_TO_YESTERDAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/REGION/PiemonteWrapper.html">NEW_VALUES_IN_DAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_STACKS/REGION/PiemonteWrapper.html">NEW_VALUES_STACKS</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/PiemonteWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/PiemonteWrapper.html">RELATIVE_CHARTS_1</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/REGION/PiemonteWrapper.html">RELATIVE_CHARTS_2</a></div>
-    </table>
-    <div class="w3-container w3-green"><h4>Puglia</h4></div>
-    <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
-    <div class="w3-quarter"><a href="ABSOLUTE_STACKS/REGION/PugliaWrapper.html">ABSOLUTE_STACKS</a></div>
-    <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/REGION/PugliaWrapper.html">FORECASTS_ON_SPEED</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_DIFF_TO_YESTERDAY/REGION/PugliaWrapper.html">NEW_VALUES_DIFF_TO_YESTERDAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/REGION/PugliaWrapper.html">NEW_VALUES_IN_DAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_STACKS/REGION/PugliaWrapper.html">NEW_VALUES_STACKS</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/PugliaWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/PugliaWrapper.html">RELATIVE_CHARTS_1</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/REGION/PugliaWrapper.html">RELATIVE_CHARTS_2</a></div>
-    </table>
-    <div class="w3-container w3-green"><h4>Sardegna</h4></div>
-    <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
-    <div class="w3-quarter"><a href="ABSOLUTE_STACKS/REGION/SardegnaWrapper.html">ABSOLUTE_STACKS</a></div>
-    <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/REGION/SardegnaWrapper.html">FORECASTS_ON_SPEED</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_DIFF_TO_YESTERDAY/REGION/SardegnaWrapper.html">NEW_VALUES_DIFF_TO_YESTERDAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/REGION/SardegnaWrapper.html">NEW_VALUES_IN_DAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_STACKS/REGION/SardegnaWrapper.html">NEW_VALUES_STACKS</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/SardegnaWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/SardegnaWrapper.html">RELATIVE_CHARTS_1</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/REGION/SardegnaWrapper.html">RELATIVE_CHARTS_2</a></div>
-    </table>
-    <div class="w3-container w3-green"><h4>Sicilia</h4></div>
-    <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
-    <div class="w3-quarter"><a href="ABSOLUTE_STACKS/REGION/SiciliaWrapper.html">ABSOLUTE_STACKS</a></div>
-    <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/REGION/SiciliaWrapper.html">FORECASTS_ON_SPEED</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_DIFF_TO_YESTERDAY/REGION/SiciliaWrapper.html">NEW_VALUES_DIFF_TO_YESTERDAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/REGION/SiciliaWrapper.html">NEW_VALUES_IN_DAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_STACKS/REGION/SiciliaWrapper.html">NEW_VALUES_STACKS</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/SiciliaWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/SiciliaWrapper.html">RELATIVE_CHARTS_1</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/REGION/SiciliaWrapper.html">RELATIVE_CHARTS_2</a></div>
-    </table>
-    <div class="w3-container w3-green"><h4>Toscana</h4></div>
-    <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
-    <div class="w3-quarter"><a href="ABSOLUTE_STACKS/REGION/ToscanaWrapper.html">ABSOLUTE_STACKS</a></div>
-    <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/REGION/ToscanaWrapper.html">FORECASTS_ON_SPEED</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_DIFF_TO_YESTERDAY/REGION/ToscanaWrapper.html">NEW_VALUES_DIFF_TO_YESTERDAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/REGION/ToscanaWrapper.html">NEW_VALUES_IN_DAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_STACKS/REGION/ToscanaWrapper.html">NEW_VALUES_STACKS</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/ToscanaWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/ToscanaWrapper.html">RELATIVE_CHARTS_1</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/REGION/ToscanaWrapper.html">RELATIVE_CHARTS_2</a></div>
-    </table>
-    <div class="w3-container w3-green"><h4>Umbria</h4></div>
-    <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
-    <div class="w3-quarter"><a href="ABSOLUTE_STACKS/REGION/UmbriaWrapper.html">ABSOLUTE_STACKS</a></div>
-    <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/REGION/UmbriaWrapper.html">FORECASTS_ON_SPEED</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_DIFF_TO_YESTERDAY/REGION/UmbriaWrapper.html">NEW_VALUES_DIFF_TO_YESTERDAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/REGION/UmbriaWrapper.html">NEW_VALUES_IN_DAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_STACKS/REGION/UmbriaWrapper.html">NEW_VALUES_STACKS</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/UmbriaWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/UmbriaWrapper.html">RELATIVE_CHARTS_1</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/REGION/UmbriaWrapper.html">RELATIVE_CHARTS_2</a></div>
-    </table>
-    <div class="w3-container w3-green"><h4>Valle d'Aosta</h4></div>
-    <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
-    <div class="w3-quarter"><a href="ABSOLUTE_STACKS/REGION/Valle d'AostaWrapper.html">ABSOLUTE_STACKS</a></div>
-    <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/REGION/Valle d'AostaWrapper.html">FORECASTS_ON_SPEED</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_DIFF_TO_YESTERDAY/REGION/Valle d'AostaWrapper.html">NEW_VALUES_DIFF_TO_YESTERDAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/REGION/Valle d'AostaWrapper.html">NEW_VALUES_IN_DAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_STACKS/REGION/Valle d'AostaWrapper.html">NEW_VALUES_STACKS</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/Valle d'AostaWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/Valle d'AostaWrapper.html">RELATIVE_CHARTS_1</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/REGION/Valle d'AostaWrapper.html">RELATIVE_CHARTS_2</a></div>
-    </table>
-    <div class="w3-container w3-green"><h4>Veneto</h4></div>
-    <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
-    <div class="w3-quarter"><a href="ABSOLUTE_STACKS/REGION/VenetoWrapper.html">ABSOLUTE_STACKS</a></div>
-    <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/REGION/VenetoWrapper.html">FORECASTS_ON_SPEED</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_DIFF_TO_YESTERDAY/REGION/VenetoWrapper.html">NEW_VALUES_DIFF_TO_YESTERDAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/REGION/VenetoWrapper.html">NEW_VALUES_IN_DAY</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_STACKS/REGION/VenetoWrapper.html">NEW_VALUES_STACKS</a></div>
-    <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/VenetoWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/VenetoWrapper.html">RELATIVE_CHARTS_1</a></div>
-    <div class="w3-quarter"><a href="RELATIVE_CHARTS_2/REGION/VenetoWrapper.html">RELATIVE_CHARTS_2</a></div>
-    </table>
-  </div>
-</body>
+        <button class="accordion">NAZIONE</button>
+        <div class="panel">
+            <div class="w3-container w3-green"><h4>Italy</h4></div>
+            <table style="width:100%; border: 1px solid black; background-color: #a1f1c1;">
+                <div class="w3-quarter"><a href="ABSOLUTE_STACKS/NATION/ITALYWrapper.html">ABSOLUTE_STACKS</a></div>
+                <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/NATION/ITALYWrapper.html">FORECASTS_ON_SPEED</a></div>
+                <div class="w3-quarter"><a href="TREND_10_DAYS/NATION/ITALYWrapper.html">TREND_10_DAYS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/NATION/ITALYWrapper.html">NEW_VALUES_IN_DAY</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_STACKS/NATION/ITALYWrapper.html">NEW_VALUES_STACKS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/NATION/ITALYWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
+                <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/NATION/ITALYWrapper.html">RELATIVE_CHARTS_1</a></div>
+                <div class="w3-quarter"><a href="ABSOLUTE_CHARTS_1/NATION/ITALY.html">ABSOLUTE_CHARTS_1</a></div>
+            </table>
+        </div>
 
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
-  });
-}
+        <button class="accordion">ZONA GEOGRAFICA</button>
+        <div class="panel">
+            <div class="w3-container w3-green"><h4>Nord</h4></div>
+            <table style="width:100%; border: 1px solid black; background-color: #a1f1c1;">
+                <div class="w3-quarter"><a href="ABSOLUTE_STACKS/GEO/NORTHWrapper.html">ABSOLUTE_STACKS</a></div>
+                <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/GEO/NORTHWrapper.html">FORECASTS_ON_SPEED</a></div>
+                <div class="w3-quarter"><a href="TREND_10_DAYS/GEO/NORTHWrapper.html">TREND_10_DAYS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/GEO/NORTHWrapper.html">NEW_VALUES_IN_DAY</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_STACKS/GEO/NORTHWrapper.html">NEW_VALUES_STACKS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/GEO/NORTHWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
+                <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/GEO/NORTHWrapper.html">RELATIVE_CHARTS_1</a></div>
+                <div class="w3-quarter"><a href="ABSOLUTE_CHARTS_1/GEO/NORTH.html">ABSOLUTE_CHARTS_1</a></div>
+            </table>
+            <div class="w3-container w3-green"><h4>Centro</h4></div>
+            <table style="width:100%; border: 1px solid black; background-color: #a1f1c1;">
+                <div class="w3-quarter"><a href="ABSOLUTE_STACKS/GEO/CENTERWrapper.html">ABSOLUTE_STACKS</a></div>
+                <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/GEO/CENTERWrapper.html">FORECASTS_ON_SPEED</a></div>
+                <div class="w3-quarter"><a href="TREND_10_DAYS/GEO/CENTERWrapper.html">TREND_10_DAYS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/GEO/CENTERWrapper.html">NEW_VALUES_IN_DAY</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_STACKS/GEO/CENTERWrapper.html">NEW_VALUES_STACKS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/GEO/CENTERWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
+                <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/GEO/CENTERWrapper.html">RELATIVE_CHARTS_1</a></div>
+                <div class="w3-quarter"><a href="ABSOLUTE_CHARTS_1/GEO/CENTER.html">ABSOLUTE_CHARTS_1</a></div>
+            </table>
+            <div class="w3-container w3-green"><h4>Sud</h4></div>
+            <table style="width:100%; border: 1px solid black; background-color: #a1f1c1;">
+                <div class="w3-quarter"><a href="ABSOLUTE_STACKS/GEO/SOUTHWrapper.html">ABSOLUTE_STACKS</a></div>
+                <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/GEO/SOUTHWrapper.html">FORECASTS_ON_SPEED</a></div>
+                <div class="w3-quarter"><a href="TREND_10_DAYS/GEO/SOUTHWrapper.html">TREND_10_DAYS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/GEO/SOUTHWrapper.html">NEW_VALUES_IN_DAY</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_STACKS/GEO/SOUTHWrapper.html">NEW_VALUES_STACKS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/GEO/SOUTHWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
+                <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/GEO/SOUTHWrapper.html">RELATIVE_CHARTS_1</a></div>
+                <div class="w3-quarter"><a href="ABSOLUTE_CHARTS_1/GEO/SOUTH.html">ABSOLUTE_CHARTS_1</a></div>
+            </table>
+        </div>
 
 
-</script>
+
+        <div class="w3-container w3-green"><h3>Comparazione Regioni</h3><HR>
+            <h5>  
+                <span style="width:250px;display:inline-block;"><a href="MULTIREGION/POSITIVI_ON_POP.html">Positivi/Pop</a></span>
+                <span style="width:250px;display:inline-block;"><a href="MULTIREGION/TERAPIA_ON_POP.html">Terapia/Pop</a></span>
+                <span style="width:250px;display:inline-block;"><a href="MULTIREGION/GUARITI_ON_POP.html">Guariti/Pop</a></span>
+                <span style="width:250px;display:inline-block;"><a href="MULTIREGION/DECEDUTI_ON_POP.html">Deceduti/Pop</a></span>
+                <BR>
+                <span style="width:250px;display:inline-block;"><a href="MULTIREGION/POSITIVI_DAY_ON_POP.html">Positivi/Pop (Giorno)</a></span>
+                <span style="width:250px;display:inline-block;"><a href="MULTIREGION/POSITIVI_DAY_ON_TAMPONI_DAY.html">Positivi/Tamponi (Giorno)</a></span>
+                <span style="width:250px;display:inline-block;"><a href="MULTIREGION/POSITIVI_DAY_ON_CASES_DAY.html">Positivi/Casi (Giorno)</a></span>
+            </h5>
+            <HR>
+            <h5>  
+                <span style="width:250px;display:inline-block;"><a href="MULTIREGION/POSITIVI_INCREMENT_10.html">Positivi Incr 10gg</a></span>
+                <span style="width:250px;display:inline-block;"><a href="MULTIREGION/TERAPIA_INCREMENT_10.html">Terapia Incr 10gg</a></span>
+                <span style="width:250px;display:inline-block;"><a href="MULTIREGION/OSPEDALIZZATI_INCREMENT_10.html">Ospedalizzati Incr 10gg</a></span>
+                <span style="width:250px;display:inline-block;"><a href="MULTIREGION/GUARITI_INCREMENT_10.html">Guariti Incr 10gg</a></span>
+                <span style="width:250px;display:inline-block;"><a href="MULTIREGION/DECEDUTI_INCREMENT_10.html">Deceduti Incr 10gg</a></span>
+                <BR>
+                <span style="width:250px;display:inline-block;"><a href="MULTIREGION/POSITIVI_DAY_INCREMENT_10.html">Positivi Giorno Incr 10gg</a></span>
+                <span style="width:250px;display:inline-block;"><a href="MULTIREGION/DECEDUTI_DAY_INCREMENT_10.html">Deceduti Giorno Incr 10gg</a></span>
+            </h5>
+            <HR>
+            <h5>  
+                <span style="width:250px;display:inline-block;"><a href="MULTIREGION/ZONES_CHART.html">Mappa a Zone</a></span>
+                <span style="width:250px;display:inline-block;"><a href="MULTIREGION/TERAPIA.html">Terapia (Assoluto)</a></span>
+                <span style="width:250px;display:inline-block;"><a href="MULTIREGION/TERAPIA_ON_POSTI.html">Occupazione Terapie</a></span>
+            </h5>
+        </div>
+        
+        
+        
+        <button class="accordion">REGIONE</button>
+        <div class="panel">
+            <div class="w3-container w3-green"><h4>Abruzzo</h4></div>
+            <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
+                <div class="w3-quarter"><a href="ABSOLUTE_STACKS/REGION/AbruzzoWrapper.html">ABSOLUTE_STACKS</a></div>
+                <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/REGION/AbruzzoWrapper.html">FORECASTS_ON_SPEED</a></div>
+                <div class="w3-quarter"><a href="TREND_10_DAYS/REGION/AbruzzoWrapper.html">TREND_10_DAYS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/REGION/AbruzzoWrapper.html">NEW_VALUES_IN_DAY</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_STACKS/REGION/AbruzzoWrapper.html">NEW_VALUES_STACKS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/AbruzzoWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
+                <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/AbruzzoWrapper.html">RELATIVE_CHARTS_1</a></div>
+                <div class="w3-quarter"><a href="ABSOLUTE_CHARTS_1/REGION/Abruzzo.html">ABSOLUTE_CHARTS_1</a></div>
+            </table>
+            <div class="w3-container w3-green"><h4>Basilicata</h4></div>
+            <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
+                <div class="w3-quarter"><a href="ABSOLUTE_STACKS/REGION/BasilicataWrapper.html">ABSOLUTE_STACKS</a></div>
+                <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/REGION/BasilicataWrapper.html">FORECASTS_ON_SPEED</a></div>
+                <div class="w3-quarter"><a href="TREND_10_DAYS/REGION/BasilicataWrapper.html">TREND_10_DAYS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/REGION/BasilicataWrapper.html">NEW_VALUES_IN_DAY</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_STACKS/REGION/BasilicataWrapper.html">NEW_VALUES_STACKS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/BasilicataWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
+                <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/BasilicataWrapper.html">RELATIVE_CHARTS_1</a></div>
+                <div class="w3-quarter"><a href="ABSOLUTE_CHARTS_1/REGION/Basilicata.html">ABSOLUTE_CHARTS_1</a></div>
+            </table>
+            <div class="w3-container w3-green"><h4>Calabria</h4></div>
+            <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
+                <div class="w3-quarter"><a href="ABSOLUTE_STACKS/REGION/CalabriaWrapper.html">ABSOLUTE_STACKS</a></div>
+                <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/REGION/CalabriaWrapper.html">FORECASTS_ON_SPEED</a></div>
+                <div class="w3-quarter"><a href="TREND_10_DAYS/REGION/CalabriaWrapper.html">TREND_10_DAYS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/REGION/CalabriaWrapper.html">NEW_VALUES_IN_DAY</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_STACKS/REGION/CalabriaWrapper.html">NEW_VALUES_STACKS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/CalabriaWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
+                <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/CalabriaWrapper.html">RELATIVE_CHARTS_1</a></div>
+                <div class="w3-quarter"><a href="ABSOLUTE_CHARTS_1/REGION/Calabria.html">ABSOLUTE_CHARTS_1</a></div>
+            </table>
+            <div class="w3-container w3-green"><h4>Campania</h4></div>
+            <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
+                <div class="w3-quarter"><a href="ABSOLUTE_STACKS/REGION/CampaniaWrapper.html">ABSOLUTE_STACKS</a></div>
+                <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/REGION/CampaniaWrapper.html">FORECASTS_ON_SPEED</a></div>
+                <div class="w3-quarter"><a href="TREND_10_DAYS/REGION/CampaniaWrapper.html">TREND_10_DAYS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/REGION/CampaniaWrapper.html">NEW_VALUES_IN_DAY</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_STACKS/REGION/CampaniaWrapper.html">NEW_VALUES_STACKS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/CampaniaWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
+                <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/CampaniaWrapper.html">RELATIVE_CHARTS_1</a></div>
+                <div class="w3-quarter"><a href="ABSOLUTE_CHARTS_1/REGION/Campania.html">ABSOLUTE_CHARTS_1</a></div>
+            </table>
+            <div class="w3-container w3-green"><h4>Emilia-Romagna</h4></div>
+            <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
+                <div class="w3-quarter"><a href="ABSOLUTE_STACKS/REGION/Emilia-RomagnaWrapper.html">ABSOLUTE_STACKS</a></div>
+                <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/REGION/Emilia-RomagnaWrapper.html">FORECASTS_ON_SPEED</a></div>
+                <div class="w3-quarter"><a href="TREND_10_DAYS/REGION/Emilia-RomagnaWrapper.html">TREND_10_DAYS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/REGION/Emilia-RomagnaWrapper.html">NEW_VALUES_IN_DAY</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_STACKS/REGION/Emilia-RomagnaWrapper.html">NEW_VALUES_STACKS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/Emilia-RomagnaWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
+                <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/Emilia-RomagnaWrapper.html">RELATIVE_CHARTS_1</a></div>
+                <div class="w3-quarter"><a href="ABSOLUTE_CHARTS_1/REGION/Emilia-Romagna.html">ABSOLUTE_CHARTS_1</a></div>
+            </table>
+            <div class="w3-container w3-green"><h4>Friuli Venezia Giulia</h4></div>
+            <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
+                <div class="w3-quarter"><a href="ABSOLUTE_STACKS/REGION/Friuli Venezia GiuliaWrapper.html">ABSOLUTE_STACKS</a></div>
+                <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/REGION/Friuli Venezia GiuliaWrapper.html">FORECASTS_ON_SPEED</a></div>
+                <div class="w3-quarter"><a href="TREND_10_DAYS/REGION/Friuli Venezia GiuliaWrapper.html">TREND_10_DAYS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/REGION/Friuli Venezia GiuliaWrapper.html">NEW_VALUES_IN_DAY</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_STACKS/REGION/Friuli Venezia GiuliaWrapper.html">NEW_VALUES_STACKS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/Friuli Venezia GiuliaWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
+                <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/Friuli Venezia GiuliaWrapper.html">RELATIVE_CHARTS_1</a></div>
+                <div class="w3-quarter"><a href="ABSOLUTE_CHARTS_1/REGION/Friuli Venezia Giulia.html">ABSOLUTE_CHARTS_1</a></div>
+            </table>
+            <div class="w3-container w3-green"><h4>Lazio</h4></div>
+            <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
+                <div class="w3-quarter"><a href="ABSOLUTE_STACKS/REGION/LazioWrapper.html">ABSOLUTE_STACKS</a></div>
+                <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/REGION/LazioWrapper.html">FORECASTS_ON_SPEED</a></div>
+                <div class="w3-quarter"><a href="TREND_10_DAYS/REGION/LazioWrapper.html">TREND_10_DAYS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/REGION/LazioWrapper.html">NEW_VALUES_IN_DAY</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_STACKS/REGION/LazioWrapper.html">NEW_VALUES_STACKS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/LazioWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
+                <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/LazioWrapper.html">RELATIVE_CHARTS_1</a></div>
+                <div class="w3-quarter"><a href="ABSOLUTE_CHARTS_1/REGION/Lazio.html">ABSOLUTE_CHARTS_1</a></div>
+            </table>
+            <div class="w3-container w3-green"><h4>Liguria</h4></div>
+            <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
+                <div class="w3-quarter"><a href="ABSOLUTE_STACKS/REGION/LiguriaWrapper.html">ABSOLUTE_STACKS</a></div>
+                <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/REGION/LiguriaWrapper.html">FORECASTS_ON_SPEED</a></div>
+                <div class="w3-quarter"><a href="TREND_10_DAYS/REGION/LiguriaWrapper.html">TREND_10_DAYS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/REGION/LiguriaWrapper.html">NEW_VALUES_IN_DAY</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_STACKS/REGION/LiguriaWrapper.html">NEW_VALUES_STACKS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/LiguriaWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
+                <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/LiguriaWrapper.html">RELATIVE_CHARTS_1</a></div>
+                <div class="w3-quarter"><a href="ABSOLUTE_CHARTS_1/REGION/Liguria.html">ABSOLUTE_CHARTS_1</a></div>
+            </table>
+            <div class="w3-container w3-green"><h4>Lombardia</h4></div>
+            <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
+                <div class="w3-quarter"><a href="ABSOLUTE_STACKS/REGION/LombardiaWrapper.html">ABSOLUTE_STACKS</a></div>
+                <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/REGION/LombardiaWrapper.html">FORECASTS_ON_SPEED</a></div>
+                <div class="w3-quarter"><a href="TREND_10_DAYS/REGION/LombardiaWrapper.html">TREND_10_DAYS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/REGION/LombardiaWrapper.html">NEW_VALUES_IN_DAY</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_STACKS/REGION/LombardiaWrapper.html">NEW_VALUES_STACKS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/LombardiaWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
+                <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/LombardiaWrapper.html">RELATIVE_CHARTS_1</a></div>
+                <div class="w3-quarter"><a href="ABSOLUTE_CHARTS_1/REGION/Lombardia.html">ABSOLUTE_CHARTS_1</a></div>
+            </table>
+            <div class="w3-container w3-green"><h4>Marche</h4></div>
+            <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
+                <div class="w3-quarter"><a href="ABSOLUTE_STACKS/REGION/MarcheWrapper.html">ABSOLUTE_STACKS</a></div>
+                <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/REGION/MarcheWrapper.html">FORECASTS_ON_SPEED</a></div>
+                <div class="w3-quarter"><a href="TREND_10_DAYS/REGION/MarcheWrapper.html">TREND_10_DAYS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/REGION/MarcheWrapper.html">NEW_VALUES_IN_DAY</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_STACKS/REGION/MarcheWrapper.html">NEW_VALUES_STACKS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/MarcheWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
+                <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/MarcheWrapper.html">RELATIVE_CHARTS_1</a></div>
+                <div class="w3-quarter"><a href="ABSOLUTE_CHARTS_1/REGION/Marche.html">ABSOLUTE_CHARTS_1</a></div>
+            </table>
+            <div class="w3-container w3-green"><h4>Molise</h4></div>
+            <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
+                <div class="w3-quarter"><a href="ABSOLUTE_STACKS/REGION/MoliseWrapper.html">ABSOLUTE_STACKS</a></div>
+                <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/REGION/MoliseWrapper.html">FORECASTS_ON_SPEED</a></div>
+                <div class="w3-quarter"><a href="TREND_10_DAYS/REGION/MoliseWrapper.html">TREND_10_DAYS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/REGION/MoliseWrapper.html">NEW_VALUES_IN_DAY</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_STACKS/REGION/MoliseWrapper.html">NEW_VALUES_STACKS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/MoliseWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
+                <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/MoliseWrapper.html">RELATIVE_CHARTS_1</a></div>
+                <div class="w3-quarter"><a href="ABSOLUTE_CHARTS_1/REGION/Molise.html">ABSOLUTE_CHARTS_1</a></div>
+            </table>
+            <div class="w3-container w3-green"><h4>P.A. Bolzano</h4></div>
+            <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
+                <div class="w3-quarter"><a href="ABSOLUTE_STACKS/REGION/P.A. BolzanoWrapper.html">ABSOLUTE_STACKS</a></div>
+                <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/REGION/P.A. BolzanoWrapper.html">FORECASTS_ON_SPEED</a></div>
+                <div class="w3-quarter"><a href="TREND_10_DAYS/REGION/P.A. BolzanoWrapper.html">TREND_10_DAYS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/REGION/P.A. BolzanoWrapper.html">NEW_VALUES_IN_DAY</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_STACKS/REGION/P.A. BolzanoWrapper.html">NEW_VALUES_STACKS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/P.A. BolzanoWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
+                <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/P.A. BolzanoWrapper.html">RELATIVE_CHARTS_1</a></div>
+                <div class="w3-quarter"><a href="ABSOLUTE_CHARTS_1/REGION/P.A. Bolzano.html">ABSOLUTE_CHARTS_1</a></div>
+            </table>
+            <div class="w3-container w3-green"><h4>P.A. Trento</h4></div>
+            <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
+                <div class="w3-quarter"><a href="ABSOLUTE_STACKS/REGION/P.A. TrentoWrapper.html">ABSOLUTE_STACKS</a></div>
+                <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/REGION/P.A. TrentoWrapper.html">FORECASTS_ON_SPEED</a></div>
+                <div class="w3-quarter"><a href="TREND_10_DAYS/REGION/P.A. TrentoWrapper.html">TREND_10_DAYS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/REGION/P.A. TrentoWrapper.html">NEW_VALUES_IN_DAY</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_STACKS/REGION/P.A. TrentoWrapper.html">NEW_VALUES_STACKS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/P.A. TrentoWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
+                <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/P.A. TrentoWrapper.html">RELATIVE_CHARTS_1</a></div>
+                <div class="w3-quarter"><a href="ABSOLUTE_CHARTS_1/REGION/P.A. Trento.html">ABSOLUTE_CHARTS_1</a></div>
+            </table>
+            <div class="w3-container w3-green"><h4>Piemonte</h4></div>
+            <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
+                <div class="w3-quarter"><a href="ABSOLUTE_STACKS/REGION/PiemonteWrapper.html">ABSOLUTE_STACKS</a></div>
+                <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/REGION/PiemonteWrapper.html">FORECASTS_ON_SPEED</a></div>
+                <div class="w3-quarter"><a href="TREND_10_DAYS/REGION/PiemonteWrapper.html">TREND_10_DAYS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/REGION/PiemonteWrapper.html">NEW_VALUES_IN_DAY</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_STACKS/REGION/PiemonteWrapper.html">NEW_VALUES_STACKS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/PiemonteWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
+                <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/PiemonteWrapper.html">RELATIVE_CHARTS_1</a></div>
+                <div class="w3-quarter"><a href="ABSOLUTE_CHARTS_1/REGION/Piemonte.html">ABSOLUTE_CHARTS_1</a></div>
+            </table>
+            <div class="w3-container w3-green"><h4>Puglia</h4></div>
+            <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
+                <div class="w3-quarter"><a href="ABSOLUTE_STACKS/REGION/PugliaWrapper.html">ABSOLUTE_STACKS</a></div>
+                <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/REGION/PugliaWrapper.html">FORECASTS_ON_SPEED</a></div>
+                <div class="w3-quarter"><a href="TREND_10_DAYS/REGION/PugliaWrapper.html">TREND_10_DAYS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/REGION/PugliaWrapper.html">NEW_VALUES_IN_DAY</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_STACKS/REGION/PugliaWrapper.html">NEW_VALUES_STACKS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/PugliaWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
+                <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/PugliaWrapper.html">RELATIVE_CHARTS_1</a></div>
+                <div class="w3-quarter"><a href="ABSOLUTE_CHARTS_1/REGION/Puglia.html">ABSOLUTE_CHARTS_1</a></div>
+            </table>
+            <div class="w3-container w3-green"><h4>Sardegna</h4></div>
+            <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
+                <div class="w3-quarter"><a href="ABSOLUTE_STACKS/REGION/SardegnaWrapper.html">ABSOLUTE_STACKS</a></div>
+                <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/REGION/SardegnaWrapper.html">FORECASTS_ON_SPEED</a></div>
+                <div class="w3-quarter"><a href="TREND_10_DAYS/REGION/SardegnaWrapper.html">TREND_10_DAYS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/REGION/SardegnaWrapper.html">NEW_VALUES_IN_DAY</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_STACKS/REGION/SardegnaWrapper.html">NEW_VALUES_STACKS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/SardegnaWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
+                <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/SardegnaWrapper.html">RELATIVE_CHARTS_1</a></div>
+                <div class="w3-quarter"><a href="ABSOLUTE_CHARTS_1/REGION/Sardegna.html">ABSOLUTE_CHARTS_1</a></div>
+            </table>
+            <div class="w3-container w3-green"><h4>Sicilia</h4></div>
+            <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
+                <div class="w3-quarter"><a href="ABSOLUTE_STACKS/REGION/SiciliaWrapper.html">ABSOLUTE_STACKS</a></div>
+                <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/REGION/SiciliaWrapper.html">FORECASTS_ON_SPEED</a></div>
+                <div class="w3-quarter"><a href="TREND_10_DAYS/REGION/SiciliaWrapper.html">TREND_10_DAYS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/REGION/SiciliaWrapper.html">NEW_VALUES_IN_DAY</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_STACKS/REGION/SiciliaWrapper.html">NEW_VALUES_STACKS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/SiciliaWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
+                <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/SiciliaWrapper.html">RELATIVE_CHARTS_1</a></div>
+                <div class="w3-quarter"><a href="ABSOLUTE_CHARTS_1/REGION/Sicilia.html">ABSOLUTE_CHARTS_1</a></div>
+            </table>
+            <div class="w3-container w3-green"><h4>Toscana</h4></div>
+            <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
+                <div class="w3-quarter"><a href="ABSOLUTE_STACKS/REGION/ToscanaWrapper.html">ABSOLUTE_STACKS</a></div>
+                <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/REGION/ToscanaWrapper.html">FORECASTS_ON_SPEED</a></div>
+                <div class="w3-quarter"><a href="TREND_10_DAYS/REGION/ToscanaWrapper.html">TREND_10_DAYS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/REGION/ToscanaWrapper.html">NEW_VALUES_IN_DAY</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_STACKS/REGION/ToscanaWrapper.html">NEW_VALUES_STACKS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/ToscanaWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
+                <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/ToscanaWrapper.html">RELATIVE_CHARTS_1</a></div>
+                <div class="w3-quarter"><a href="ABSOLUTE_CHARTS_1/REGION/Toscana.html">ABSOLUTE_CHARTS_1</a></div>
+            </table>
+            <div class="w3-container w3-green"><h4>Umbria</h4></div>
+            <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
+                <div class="w3-quarter"><a href="ABSOLUTE_STACKS/REGION/UmbriaWrapper.html">ABSOLUTE_STACKS</a></div>
+                <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/REGION/UmbriaWrapper.html">FORECASTS_ON_SPEED</a></div>
+                <div class="w3-quarter"><a href="TREND_10_DAYS/REGION/UmbriaWrapper.html">TREND_10_DAYS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/REGION/UmbriaWrapper.html">NEW_VALUES_IN_DAY</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_STACKS/REGION/UmbriaWrapper.html">NEW_VALUES_STACKS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/UmbriaWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
+                <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/UmbriaWrapper.html">RELATIVE_CHARTS_1</a></div>
+                <div class="w3-quarter"><a href="ABSOLUTE_CHARTS_1/REGION/Umbria.html">ABSOLUTE_CHARTS_1</a></div>
+            </table>
+            <div class="w3-container w3-green"><h4>Valle d'Aosta</h4></div>
+            <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
+                <div class="w3-quarter"><a href="ABSOLUTE_STACKS/REGION/Valle d'AostaWrapper.html">ABSOLUTE_STACKS</a></div>
+                <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/REGION/Valle d'AostaWrapper.html">FORECASTS_ON_SPEED</a></div>
+                <div class="w3-quarter"><a href="TREND_10_DAYS/REGION/Valle d'AostaWrapper.html">TREND_10_DAYS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/REGION/Valle d'AostaWrapper.html">NEW_VALUES_IN_DAY</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_STACKS/REGION/Valle d'AostaWrapper.html">NEW_VALUES_STACKS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/Valle d'AostaWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
+                <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/Valle d'AostaWrapper.html">RELATIVE_CHARTS_1</a></div>
+                <div class="w3-quarter"><a href="ABSOLUTE_CHARTS_1/REGION/Valle d'Aosta.html">ABSOLUTE_CHARTS_1</a></div>
+            </table>
+            <div class="w3-container w3-green"><h4>Veneto</h4></div>
+            <table style="width:100%; border: 1px solid black; background-color: #e1a0c1;">
+                <div class="w3-quarter"><a href="ABSOLUTE_STACKS/REGION/VenetoWrapper.html">ABSOLUTE_STACKS</a></div>
+                <div class="w3-quarter"><a href="FORECASTS_ON_SPEED/REGION/VenetoWrapper.html">FORECASTS_ON_SPEED</a></div>
+                <div class="w3-quarter"><a href="TREND_10_DAYS/REGION/VenetoWrapper.html">TREND_10_DAYS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_IN_DAY/REGION/VenetoWrapper.html">NEW_VALUES_IN_DAY</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_STACKS/REGION/VenetoWrapper.html">NEW_VALUES_STACKS</a></div>
+                <div class="w3-quarter"><a href="NEW_VALUES_ON_TOT_POSITIVI/REGION/VenetoWrapper.html">NEW_VALUES_ON_TOT_POSITIVI</a></div>
+                <div class="w3-quarter"><a href="RELATIVE_CHARTS_1/REGION/VenetoWrapper.html">RELATIVE_CHARTS_1</a></div>
+                <div class="w3-quarter"><a href="ABSOLUTE_CHARTS_1/REGION/Veneto.html">ABSOLUTE_CHARTS_1</a></div>
+            </table>
+        </div>
+    </body>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+
+
+    </script>
 
 
 </html>
