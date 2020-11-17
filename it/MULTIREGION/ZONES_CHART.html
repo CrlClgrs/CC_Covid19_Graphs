@@ -11,87 +11,39 @@
         var target_target = document.getElementById('target');
         var layout = {
     title: 'COMPARAZIONE AREE REGIONI',
-    height: 700,
-    width: 1500,
+    height: 800,
+    width: 1400,
     showlegend: true,
     hovermode: 'x',
     xaxis: {
-    title: 'POSITIVI / POPOLAZIONE',
+    title: 'Valore di POSITIVI / Valore di POPOLAZIONE --- entrambi al valore del giorno corrente',
+    tickmode: 'linear',
+    tickcolor: '#444',
+    ticklen: 5,
+    tickwidth: 1,
+    showticklabels: true,
+    nticks: '1000',
     },
 
     yaxis: {
-    title: '(POSITIVI OGGI) / (POSITIVI 10 GG PRIMA)',
+    title: 'Valore di POSITIVI oggi / Valore di POSITIVI 10 giorni prima',
+    tickmode: 'linear',
+    tickcolor: '#444',
+    ticklen: 5,
+    tickwidth: 1,
+    showticklabels: true,
+    nticks: '1000',
     },
 
 };
 
 var trace0 =
 {
-x: ["6.441885E-4"],
-y: ["1.2145276628"],
+x: ["0.021402"],
+y: ["1.4306149733"],
 showlegend: true,
 marker: {
-    size: 80.675,
-},
-mode: 'markers',
-opacity: '0.5',
-xaxis: 'x',
-yaxis: 'y',
-type: 'scatter',
-name: 'Lombardia',
-};
-var trace1 =
-{
-x: ["5.891422E-4"],
-y: ["1.4650642817"],
-showlegend: true,
-marker: {
-    size: 32.7625,
-},
-mode: 'markers',
-opacity: '0.5',
-xaxis: 'x',
-yaxis: 'y',
-type: 'scatter',
-name: 'Emilia-Romagna',
-};
-var trace2 =
-{
-x: ["4.604854E-4"],
-y: ["1.9985283297"],
-showlegend: true,
-marker: {
-    size: 33.95,
-},
-mode: 'markers',
-opacity: '0.5',
-xaxis: 'x',
-yaxis: 'y',
-type: 'scatter',
-name: 'Lazio',
-};
-var trace3 =
-{
-x: ["4.590905E-4"],
-y: ["1.3347156398"],
-showlegend: true,
-marker: {
-    size: 28.1625,
-},
-mode: 'markers',
-opacity: '0.5',
-xaxis: 'x',
-yaxis: 'y',
-type: 'scatter',
-name: 'Veneto',
-};
-var trace4 =
-{
-x: ["3.78E-4"],
-y: ["1.4881889764"],
-showlegend: true,
-marker: {
-    size: 2.3625,
+    size: 133.7625,
 },
 mode: 'markers',
 opacity: '0.5',
@@ -100,43 +52,28 @@ yaxis: 'y',
 type: 'scatter',
 name: 'P.A. Bolzano',
 };
-var trace5 =
+var trace1 =
 {
-x: ["3.762548E-4"],
-y: ["5.0983606557"],
+x: ["0.017047201"],
+y: ["0.9917469051"],
 showlegend: true,
 marker: {
-    size: 7.775,
+    size: 27.0375,
 },
 mode: 'markers',
 opacity: '0.5',
 xaxis: 'x',
 yaxis: 'y',
 type: 'scatter',
-name: 'Sardegna',
+name: 'Valle d&#39;Aosta',
 };
-var trace6 =
+var trace2 =
 {
-x: ["3.604603E-4"],
-y: ["1.8788300836"],
+x: ["0.0167980793"],
+y: ["1.4330439511"],
 showlegend: true,
 marker: {
-    size: 16.8625,
-},
-mode: 'markers',
-opacity: '0.5',
-xaxis: 'x',
-yaxis: 'y',
-type: 'scatter',
-name: 'Toscana',
-};
-var trace7 =
-{
-x: ["3.064296E-4"],
-y: ["1.5005574136"],
-showlegend: true,
-marker: {
-    size: 16.825,
+    size: 922.325,
 },
 mode: 'markers',
 opacity: '0.5',
@@ -145,58 +82,13 @@ yaxis: 'y',
 type: 'scatter',
 name: 'Piemonte',
 };
-var trace8 =
+var trace3 =
 {
-x: ["2.996217E-4"],
-y: ["1.4565217391"],
+x: ["0.0158802305"],
+y: ["1.4155344549"],
 showlegend: true,
 marker: {
-    size: 5.8625,
-},
-mode: 'markers',
-opacity: '0.5',
-xaxis: 'x',
-yaxis: 'y',
-type: 'scatter',
-name: 'Liguria',
-};
-var trace9 =
-{
-x: ["2.896584E-4"],
-y: ["1.484496124"],
-showlegend: true,
-marker: {
-    size: 4.7875,
-},
-mode: 'markers',
-opacity: '0.5',
-xaxis: 'x',
-yaxis: 'y',
-type: 'scatter',
-name: 'Abruzzo',
-};
-var trace10 =
-{
-x: ["2.849232E-4"],
-y: ["1.7009803922"],
-showlegend: true,
-marker: {
-    size: 4.3375,
-},
-mode: 'markers',
-opacity: '0.5',
-xaxis: 'x',
-yaxis: 'y',
-type: 'scatter',
-name: 'Friuli Venezia Giulia',
-};
-var trace11 =
-{
-x: ["2.733305E-4"],
-y: ["2.677852349"],
-showlegend: true,
-marker: {
-    size: 19.95,
+    size: 1159.075,
 },
 mode: 'markers',
 opacity: '0.5',
@@ -205,13 +97,73 @@ yaxis: 'y',
 type: 'scatter',
 name: 'Campania',
 };
-var trace12 =
+var trace4 =
 {
-x: ["2.576195E-4"],
-y: ["2.4623655914"],
+x: ["0.0156273113"],
+y: ["1.2267353031"],
 showlegend: true,
 marker: {
-    size: 2.8625,
+    size: 1957.0875,
+},
+mode: 'markers',
+opacity: '0.5',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'Lombardia',
+};
+var trace5 =
+{
+x: ["0.0144697159"],
+y: ["1.302262944"],
+showlegend: true,
+marker: {
+    size: 676.9,
+},
+mode: 'markers',
+opacity: '0.5',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'Toscana',
+};
+var trace6 =
+{
+x: ["0.0128725661"],
+y: ["1.6064405734"],
+showlegend: true,
+marker: {
+    size: 715.85,
+},
+mode: 'markers',
+opacity: '0.5',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'Emilia-Romagna',
+};
+var trace7 =
+{
+x: ["0.0128518853"],
+y: ["1.3234362213"],
+showlegend: true,
+marker: {
+    size: 788.3875,
+},
+mode: 'markers',
+opacity: '0.5',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'Veneto',
+};
+var trace8 =
+{
+x: ["0.012649228"],
+y: ["1.2"],
+showlegend: true,
+marker: {
+    size: 140.55,
 },
 mode: 'markers',
 opacity: '0.5',
@@ -220,43 +172,58 @@ yaxis: 'y',
 type: 'scatter',
 name: 'Umbria',
 };
-var trace13 =
+var trace9 =
 {
-x: ["2.158164E-4"],
-y: ["1.5227272727"],
+x: ["0.01208096"],
+y: ["1.453116078"],
 showlegend: true,
 marker: {
-    size: 0.8375,
+    size: 890.6875,
 },
 mode: 'markers',
 opacity: '0.5',
 xaxis: 'x',
 yaxis: 'y',
 type: 'scatter',
-name: 'Molise',
+name: 'Lazio',
 };
-var trace14 =
+var trace10 =
 {
-x: ["2.092298E-4"],
-y: ["1.4653739612"],
+x: ["0.0105940872"],
+y: ["1.5748173131"],
 showlegend: true,
 marker: {
-    size: 13.225,
+    size: 175.1,
 },
 mode: 'markers',
 opacity: '0.5',
 xaxis: 'x',
 yaxis: 'y',
 type: 'scatter',
-name: 'Sicilia',
+name: 'Abruzzo',
 };
-var trace15 =
+var trace11 =
 {
-x: ["1.892E-4"],
-y: ["1.4195121951"],
+x: ["0.0105608676"],
+y: ["1.3652956723"],
 showlegend: true,
 marker: {
-    size: 3.6375,
+    size: 206.6375,
+},
+mode: 'markers',
+opacity: '0.5',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'Liguria',
+};
+var trace12 =
+{
+x: ["0.0094346431"],
+y: ["1.4766459754"],
+showlegend: true,
+marker: {
+    size: 181.3875,
 },
 mode: 'markers',
 opacity: '0.5',
@@ -265,13 +232,58 @@ yaxis: 'y',
 type: 'scatter',
 name: 'Marche',
 };
-var trace16 =
+var trace13 =
 {
-x: ["1.683117E-4"],
-y: ["2.0117647059"],
+x: ["0.0085567285"],
+y: ["1.4158967391"],
 showlegend: true,
 marker: {
-    size: 8.55,
+    size: 130.2625,
+},
+mode: 'markers',
+opacity: '0.5',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'Friuli Venezia Giulia',
+};
+var trace14 =
+{
+x: ["0.0075846169"],
+y: ["1.7913043478"],
+showlegend: true,
+marker: {
+    size: 54.075,
+},
+mode: 'markers',
+opacity: '0.5',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'Basilicata',
+};
+var trace15 =
+{
+x: ["0.0070897313"],
+y: ["1.4136159281"],
+showlegend: true,
+marker: {
+    size: 27.5125,
+},
+mode: 'markers',
+opacity: '0.5',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'Molise',
+};
+var trace16 =
+{
+x: ["0.0065471785"],
+y: ["1.6054425873"],
+showlegend: true,
+marker: {
+    size: 332.5875,
 },
 mode: 'markers',
 opacity: '0.5',
@@ -282,26 +294,41 @@ name: 'Puglia',
 };
 var trace17 =
 {
-x: ["1.455209E-4"],
-y: ["1.1857142857"],
+x: ["0.0065233632"],
+y: ["1.336141742"],
 showlegend: true,
 marker: {
-    size: 1.0375,
+    size: 134.8,
 },
 mode: 'markers',
 opacity: '0.5',
 xaxis: 'x',
 yaxis: 'y',
 type: 'scatter',
-name: 'Basilicata',
+name: 'Sardegna',
 };
 var trace18 =
 {
-x: ["1.314714E-4"],
-y: ["1.2542372881"],
+x: ["0.0060822985"],
+y: ["1.4831460674"],
 showlegend: true,
 marker: {
-    size: 0.925,
+    size: 384.45,
+},
+mode: 'markers',
+opacity: '0.5',
+xaxis: 'x',
+yaxis: 'y',
+type: 'scatter',
+name: 'Sicilia',
+};
+var trace19 =
+{
+x: ["0.0053192623"],
+y: ["1.1436210848"],
+showlegend: true,
+marker: {
+    size: 37.425,
 },
 mode: 'markers',
 opacity: '0.5',
@@ -310,28 +337,13 @@ yaxis: 'y',
 type: 'scatter',
 name: 'P.A. Trento',
 };
-var trace19 =
-{
-x: ["1.182191E-4"],
-y: ["1.875"],
-showlegend: true,
-marker: {
-    size: 0.1875,
-},
-mode: 'markers',
-opacity: '0.5',
-xaxis: 'x',
-yaxis: 'y',
-type: 'scatter',
-name: 'Valle d&#39;Aosta',
-};
 var trace20 =
 {
-x: ["9.61769E-5"],
-y: ["1.2272727273"],
+x: ["0.003937657"],
+y: ["1.6137643379"],
 showlegend: true,
 marker: {
-    size: 2.3625,
+    size: 96.725,
 },
 mode: 'markers',
 opacity: '0.5',
